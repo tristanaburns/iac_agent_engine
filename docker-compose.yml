@@ -75,6 +75,9 @@ services:
 
   # Terraform Agent - IaC execution service
   terraform-agent:
+    build:
+      context: ./services/terraform_agent
+      dockerfile: Dockerfile
     image: n8n-terraform-agent:latest
     container_name: iac-terraform-agent
     restart: unless-stopped
@@ -129,6 +132,9 @@ services:
 
   # Ansible Agent - Configuration management service
   ansible-agent:
+    build:
+      context: ./services/ansible_agent
+      dockerfile: Dockerfile
     image: n8n-ansible-agent:v1.0.4
     container_name: iac-ansible-agent
     restart: unless-stopped
@@ -175,6 +181,9 @@ services:
 
   # IAC Agent Manager - Orchestration and state management
   iac-agent-manager:
+    build:
+      context: ./services/iac_agent_manager
+      dockerfile: Dockerfile
     image: n8n-iac-agent-manager:latest
     container_name: iac-agent-manager
     restart: unless-stopped
