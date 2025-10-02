@@ -34,7 +34,7 @@ colorlog==6.8.0
 prometheus-client==0.19.0
 
 # HTTP middleware and CORS
-python-multipart==0.0.6
+python-multipart==0.0.18
 
 # Utility libraries
 python-dateutil==2.8.2
@@ -51,7 +51,7 @@ types-redis==4.6.0.11
 types-requests==2.31.0.10
 
 # Code formatting and linting
-black==23.11.0
+black==24.3.0
 isort==5.12.0
 flake8==6.1.0
 bandit==1.7.5
