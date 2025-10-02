@@ -1,0 +1,216 @@
+{
+  "mcpServers": {
+    "neo4j-memory": {
+      "command": "D:\\github_development\\ai-agents\\.claude\\mcp-configs\\neo4j-memory-wrapper.bat",
+      "type": "stdio"
+    },
+    "grep": {
+      "command": "mcp-remote",
+      "args": [
+        "https://mcp.grep.app"
+      ]
+    },
+    "aks": {
+      "command": "docker",
+      "args": [
+        "run",
+        "--rm",
+        "-i",
+        "mcp/aks"
+      ],
+      "type": "stdio"
+    },
+    "aws-cdk-mcp-server": {
+      "command": "docker",
+      "args": [
+        "run",
+        "--rm",
+        "-i",
+        "-v",
+        "%USERPROFILE%\\.aws:/root/.aws:ro",
+        "mcp/aws-cdk-mcp-server"
+      ],
+      "type": "stdio"
+    },
+    "aws-diagram": {
+      "command": "docker",
+      "args": [
+        "run",
+        "--rm",
+        "-i",
+        "-v",
+        "%USERPROFILE%\\.aws:/root/.aws:ro",
+        "mcp/aws-diagram"
+      ],
+      "type": "stdio"
+    },
+    "aws-documentation": {
+      "command": "docker",
+      "args": [
+        "run",
+        "--rm",
+        "-i",
+        "-v",
+        "%USERPROFILE%\\.aws:/root/.aws:ro",
+        "mcp/aws-documentation"
+      ],
+      "type": "stdio"
+    },
+    "aws-kb-retrieval-server": {
+      "command": "docker",
+      "args": [
+        "run",
+        "--rm",
+        "-i",
+        "-v",
+        "%USERPROFILE%\\.aws:/root/.aws:ro",
+        "mcp/aws-kb-retrieval-server"
+      ],
+      "type": "stdio"
+    },
+    "aws-terraform": {
+      "command": "docker",
+      "args": [
+        "run",
+        "--rm",
+        "-i",
+        "-v",
+        "%USERPROFILE%\\.aws:/root/.aws:ro",
+        "mcp/aws-terraform"
+      ],
+      "type": "stdio"
+    },
+    "context7": {
+      "command": "docker",
+      "args": [
+        "run",
+        "--rm",
+        "-i",
+        "mcp/context7"
+      ],
+      "type": "stdio"
+    },
+    "desktop-commander": {
+      "command": "docker",
+      "args": [
+        "run",
+        "--rm",
+        "-i",
+        "--privileged",
+        "-v",
+        "/var/run/docker.sock:/var/run/docker.sock",
+        "mcp/desktop-commander"
+      ],
+      "type": "stdio"
+    },
+    "elevenlabs": {
+      "command": "docker",
+      "args": [
+        "run",
+        "--rm",
+        "-i",
+        "mcp/elevenlabs"
+      ],
+      "type": "stdio"
+    },
+    "fetch": {
+      "command": "docker",
+      "args": [
+        "run",
+        "--rm",
+        "-i",
+        "mcp/fetch"
+      ],
+      "type": "stdio"
+    },
+    "filesystem": {
+      "command": "docker",
+      "args": [
+        "run",
+        "--rm",
+        "-i",
+        "-v",
+        "D:\\github_development\\ai-agents:/workspace",
+        "-w",
+        "/workspace",
+        "mcp/filesystem",
+        "/workspace"
+      ],
+      "type": "stdio"
+    },
+    "mongodb": {
+      "command": "docker",
+      "args": [
+        "run",
+        "--rm",
+        "-i",
+        "--network",
+        "host",
+        "mcp/mongodb"
+      ],
+      "type": "stdio",
+      "env": {
+        "MONGODB_URI": "mongodb://localhost:27017"
+      }
+    },
+    "playwright": {
+      "command": "docker",
+      "args": [
+        "run",
+        "--rm",
+        "-i",
+        "--network",
+        "host",
+        "-v",
+        "/tmp/.X11-unix:/tmp/.X11-unix",
+        "-e",
+        "DISPLAY=:0",
+        "mcp/playwright"
+      ],
+      "type": "stdio",
+      "env": {
+        "DISPLAY": ":0"
+      }
+    },
+    "sequentialthinking": {
+      "command": "docker",
+      "args": [
+        "run",
+        "--rm",
+        "-i",
+        "mcp/sequentialthinking"
+      ],
+      "type": "stdio"
+    },
+    "tavily": {
+      "command": "docker",
+      "args": [
+        "run",
+        "--rm",
+        "-i",
+        "mcp/tavily"
+      ],
+      "type": "stdio"
+    },
+    "time": {
+      "command": "docker",
+      "args": [
+        "run",
+        "--rm",
+        "-i",
+        "mcp/time"
+      ],
+      "type": "stdio"
+    },
+    "youtube-transcript": {
+      "command": "docker",
+      "args": [
+        "run",
+        "--rm",
+        "-i",
+        "mcp/youtube-transcript"
+      ],
+      "type": "stdio"
+    }
+  }
+}

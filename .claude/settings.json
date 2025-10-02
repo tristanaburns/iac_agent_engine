@@ -1,0 +1,80 @@
+{
+  "defaultPermissionMode": "bypassPermissions",
+  "aggressiveOptimizations": true,
+  "enableExperimentalFeatures": true,
+  "skipConfirmationDialogs": true,
+  "env": {
+    "CLAUDE_CODE_MAX_OUTPUT_TOKENS": "32000",
+    "MAX_THINKING_TOKENS": "32000",
+    "MAX_MCP_OUTPUT_TOKENS": "62000",
+    "parallelTasksCount": "16",
+    "CLAUDE_PARALLEL_REASONING": "1",
+    "CLAUDE_PARALLEL_TOOL_CALLS": "1",
+    "MCP_PARALLEL_EXECUTION": "1",
+    "BASH_DEFAULT_TIMEOUT_MS": "180000",
+    "BASH_MAX_TIMEOUT_MS": "5400000",
+    "MCP_TIMEOUT": "120000",
+    "MCP_TOOL_TIMEOUT": "300000",
+    "CLAUDE_AUTONOMOUS_MODE": "1",
+    "CLAUDE_ULTRATHINK_ENABLED": "1",
+    "CLAUDE_THINKING_MODE": "ultra_maximum",
+    "CLAUDE_EXTENDED_THINKING": "1",
+    "CLAUDE_AUTONOMOUS_DECISION_MAKING": "1",
+    "CLAUDE_PROACTIVE_SUGGESTIONS": "1",
+    "CLAUDE_MAXIMIZE_ACCURACY": "1",
+    "CLAUDE_THOROUGH_ANALYSIS": "1",
+    "CLAUDE_COMPREHENSIVE_SEARCH": "1",
+    "CLAUDE_PRECISION_MODE": "1",
+    "CLAUDE_VERIFICATION_MODE": "1",
+    "CLAUDE_ERROR_CORRECTION": "1",
+    "DISABLE_NON_ESSENTIAL_MODEL_CALLS": "1",
+    "DISABLE_COST_WARNINGS": "1",
+    "DISABLE_INTERLEAVED_THINKING": "0",
+    "CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC": "1",
+    "DISABLE_TELEMETRY": "1",
+    "DISABLE_ERROR_REPORTING": "1"
+  },
+  "performance": {
+    "enableLargeFileProcessing": true,
+    "increaseReadLimit": true,
+    "extendedAnalysisMode": true,
+    "maxFileSize": "100MB",
+    "chunkProcessing": true,
+    "parallelProcessing": true,
+    "optimizeForSpeed": false
+  },
+  "permissions": {
+    "allow": ["*"],
+    "deny": [],
+    "additionalDirectories": ["~/", "../", "./", "C:\\", "/", "D:\\"],
+    "defaultMode": "bypassPermissions",
+    "fullAccess": true,
+    "noConfirmation": true,
+    "allowSystemModification": true,
+    "allowNetworkAccess": true,
+    "allowProcessManagement": true,
+    "bypassSafetyChecks": true,
+    "enableDangerousOperations": true
+  },
+  "automation": {
+    "enabled": true,
+    "autoFix": true,
+    "autoCommit": false,
+    "autoTest": true,
+    "autoOptimize": true
+  },
+  "hooks": {
+    "PreToolUse": [],
+    "PostToolUse": [],
+    "onError": []
+  },
+  "disableAllHooks": false,
+  "outputStyle": "Concise",
+  "statusLine": {
+    "type": "command",
+    "command": "pwd"
+  },
+  "enableAllProjectMcpServers": true,
+  "cleanupPeriodDays": 90,
+  "includeCoAuthoredBy": false
+}

@@ -1,0 +1,114 @@
+COMPLEX ISSUES FLAGGED FOR REMEDIATION - .claude/hooks Quality Analysis
+=========================================================================
+Analysis Date: 2025-09-22T22:11:43+09:30
+Analysis Target: .claude/hooks directory (42 Python files)
+Status: FLAGGED FOR FUTURE REMEDIATION - DO NOT ATTEMPT AUTOMATED FIXES
+
+==== HIGH PRIORITY COMPLEXITY ISSUES ====
+
+1. **CRITICAL COMPLEXITY: main_orchestrator.py:823**
+   Function: Emergency cleanup orchestrator
+   Complexity: 26 (EXTREME - Target  8)
+   Issue: Complex emergency cleanup logic with multiple branching paths
+   Risk: HIGH - Core system safety functionality
+   Recommendation: Extract helper functions for each cleanup phase
+   Estimated Effort: 6-8 hours
+
+2. **HIGH COMPLEXITY: main_orchestrator.py:1618**
+   Function: Resource cleanup validation
+   Complexity: 23 (EXTREME - Target  8)
+   Issue: Complex validation logic with nested error handling
+   Risk: HIGH - Critical resource management
+   Recommendation: Create validation strategy pattern
+   Estimated Effort: 4-6 hours
+
+3. **HIGH COMPLEXITY: quality_operations.py:1299**
+   Function: Quality check orchestration
+   Complexity: 15 (HIGH - Target  8)
+   Issue: Complex orchestration of multiple quality tools
+   Risk: MEDIUM - Quality assurance functionality
+   Recommendation: Extract tool-specific orchestration methods
+   Estimated Effort: 3-4 hours
+
+==== ARCHITECTURAL DUPLICATION PATTERNS ====
+
+1. **Subprocess Execution Pattern**
+   Files Affected: 8+ files across tools/ and operations/
+   Pattern: Similar subprocess.run() implementation patterns
+   Issue: Inconsistent error handling and logging approaches
+   Recommendation: Create subprocess utility abstraction
+   Estimated Effort: 4-6 hours
+
+2. **Orchestrator Initialization Logic**
+   Files Affected: orchestrator.py, main_orchestrator.py, quality_orchestrator.py
+   Pattern: Similar initialization and dependency injection patterns
+   Issue: Code duplication in setup and configuration
+   Recommendation: Create base orchestrator class
+   Estimated Effort: 3-4 hours
+
+3. **Error Handling Patterns**
+   Files Affected: 12+ files across all directories
+   Pattern: Repeated try-catch-log patterns
+   Issue: Inconsistent error message formatting and handling
+   Recommendation: Create error handling decorator/utility
+   Estimated Effort: 2-3 hours
+
+==== MODERATE COMPLEXITY FUNCTIONS (Require Careful Review) ====
+
+4. **tools/ast_sast_analyzer.py**: AST analysis functions (Complexity 12-14)
+5. **tools/pattern_scanner.py**: Pattern matching logic (Complexity 11-13)
+6. **orchestrators/quality_orchestrator.py**: Quality workflow management (Complexity 10-12)
+7. **tools/unicode_manager.py**: Unicode processing logic (Complexity 9-11)
+
+==== SECURITY CONSIDERATIONS (Low Risk - Monitor) ====
+
+- 37 low-severity security findings (all subprocess-related, properly implemented)
+- No hardcoded secrets detected
+- No critical vulnerabilities found
+- All findings use secure subprocess patterns
+
+==== REMEDIATION STRATEGY RECOMMENDATIONS ====
+
+**Phase 1: Critical Complexity (Weeks 1-2)**
+- Focus on main_orchestrator.py functions with complexity > 20
+- Extract helper functions maintaining exact behavior
+- Add comprehensive unit tests before refactoring
+
+**Phase 2: Architectural Patterns (Weeks 3-4)**
+- Implement subprocess utility abstraction
+- Create base orchestrator class
+- Refactor shared patterns while preserving functionality
+
+**Phase 3: Moderate Complexity (Weeks 5-6)**
+- Address functions with complexity 10-15
+- Apply consistent error handling patterns
+- Improve code organization and readability
+
+**CRITICAL CONSTRAINTS:**
+-  NO automated refactoring tools - manual review required
+-  NO business logic changes - preserve exact behavior
+-  NO API changes - maintain all interfaces
+-  Add tests before any refactoring
+-  Incremental changes with validation at each step
+-  Preserve all existing functionality
+
+**VALIDATION REQUIREMENTS:**
+- All existing functionality must work identically
+- No performance degradation
+- All error scenarios must behave the same
+- Integration points must remain stable
+
+==== ESTIMATED TOTAL EFFORT ====
+- Total Remediation Time: 20-30 hours
+- Risk Level: MEDIUM (complex but well-structured code)
+- Business Impact: LOW (no functionality changes required)
+- Priority: MEDIUM (quality improvement, not critical fixes)
+
+==== FLAGGING SUMMARY ====
+ Safe formatting and type fixes: COMPLETED
+ Complex issues: FLAGGED for careful remediation
+ High complexity functions: DOCUMENTED for future work
+ Architectural improvements: PLANNED with effort estimates
+
+This analysis preserves all existing functionality while identifying clear
+opportunities for quality improvements through careful, methodical refactoring.

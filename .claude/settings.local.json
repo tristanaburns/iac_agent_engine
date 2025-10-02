@@ -1,0 +1,112 @@
+{
+  "mcpServers": {
+    "neo4j-memory": {
+      "type": "stdio",
+      "command": "python",
+      "args": ["-m", "mcp_neo4j_memory"],
+      "env": {
+        "NEO4J_URL": "bolt://localhost:7687",
+        "NEO4J_USERNAME": "neo4j",
+        "NEO4J_PASSWORD": "6fdc72759f8947f59860776e0cd2e8cd",
+        "NEO4J_DATABASE": "neo4j"
+      }
+    },
+    "memory": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-memory"],
+      "env": {
+        "MEMORY_FILE_PATH": "./mcp/server-memory/memory.json"
+      }
+    },
+    "sequential-thinking": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-sequential-thinking"]
+    },
+    "fetch": {
+      "type": "stdio",
+      "command": "python",
+      "args": ["-m", "mcp_server_fetch"],
+      "env": {}
+    },
+    "filesystem": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "c:\\",
+        "/c/",
+        "d:\\",
+        "/d/",
+        "/"
+      ],
+      "cwd": "."
+    },
+    "git": {
+      "command": "python",
+      "args": ["-m", "mcp_server_git"]
+    },
+    "time": {
+      "command": "python",
+      "args": ["-m", "mcp_server_time"]
+    },
+    "grep": {
+      "command": "mcp-remote",
+      "args": ["https://mcp.grep.app"]
+    },
+    "upstash-context7": {
+      "command": "npx",
+      "args": ["@upstash/context7-mcp"]
+    },
+    "playwright": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "@playwright/mcp"],
+      "env": {
+        "PW_MCP_HEADLESS": "1",
+        "PW_MCP_CAPS": ""
+      }
+    },
+    "n8n-mcp": {
+      "type": "http",
+      "url": "http://n8n-mcp.local:30000/mcp",
+      "headers": {
+        "Authorization": "Bearer QfwGFQpqcNS/pxyVhVqXCkm9PzVEQrE+4VpqmEx7w/s="
+      }
+    }
+  },
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Edit|MultiEdit|Write|edit_file",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python .claude\\hooks\\post-file-edit-unicode-cleanup.py"
+          }
+        ]
+      }
+    ],
+    "SubagentStop": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python .claude\\hooks\\post-response-quality-check.py"
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python .claude\\hooks\\post-response-quality-check.py"
+          }
+        ]
+      }
+    ]
+  }
+}

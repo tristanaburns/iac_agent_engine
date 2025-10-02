@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-09-22T11:59:33.826518",
+  "session_id": "standalone",
+  "results_file": "D:\\github_development\\ai-agents\\.claude\\hooks\\.claude\\quality-checks\\post-response-quality-20250922_084638-unknown.json",
+  "analysis": {
+    "needs_remediation": true,
+    "critical_issues": 0,
+    "security_issues": 0,
+    "quality_issues": 156,
+    "total_issues": 156,
+    "issue_summary": "156 quality",
+    "remediation_priority": "medium",
+    "analysis_completion": {
+      "_analyze_formatting_issues": {
+        "completed": true,
+        "issues_processed": 156,
+        "quality_issues_added": 156,
+        "critical_issues_added": 0,
+        "validation_errors": 0
+      }
+    },
+    "analysis_validation": {
+      "valid": true,
+      "completed_functions": [
+        "_analyze_formatting_issues",
+        "_calculate_total_issues",
+        "_determine_remediation_priority",
+        "_create_issue_summary"
+      ],
+      "failed_functions": [],
+      "completion_rate": "4/4",
+      "validation_issues": [],
+      "critical_failures_count": 0
+    }
+  },
+  "decision": "failed",
+  "workflow_success": false
+}

@@ -1,0 +1,27 @@
+{
+  "timestamp": "2025-10-02T20:57:22.875009",
+  "response_id": "unknown",
+  "hook_type": "Stop",
+  "project_directory": "D:\\github_development\\ai-agents",
+  "quality_checks": {
+    "formatting": {
+      "formatter": "black",
+      "status": "success",
+      "files_formatted": [],
+      "errors": [],
+      "summary": "No recently modified Python files found"
+    },
+    "unicode_cleanup": {
+      "status": "success",
+      "files_cleaned": 0,
+      "unicode_replaced": 0,
+      "errors": [],
+      "summary": "No recently modified Python files found"
+    }
+  },
+  "hook_info": {
+    "hook_type": "Stop",
+    "hook_script": "D:\\github_development\\ai-agents\\.claude\\hooks\\post-response-quality-check.py",
+    "execution_time": "2025-10-02T20:57:22.875036"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-10-02T18:03:09.644732",
+  "session_id": "unknown",
+  "results_file": "D:\\github_development\\ai-agents\\.claude\\hooks\\quality-checks\\post-response-quality-20251002_180309-unknown.json",
+  "analysis": {
+    "needs_remediation": false,
+    "critical_issues": 0,
+    "security_issues": 0,
+    "quality_issues": 0,
+    "total_issues": 0,
+    "issue_summary": "no issues",
+    "remediation_priority": "none",
+    "analysis_completion": {
+      "_analyze_formatting_issues": {
+        "completed": true,
+        "issues_processed": 0,
+        "quality_issues_added": 0,
+        "critical_issues_added": 0,
+        "validation_errors": 0
+      }
+    },
+    "analysis_validation": {
+      "valid": true,
+      "completed_functions": [
+        "_analyze_formatting_issues",
+        "_calculate_total_issues",
+        "_determine_remediation_priority",
+        "_create_issue_summary"
+      ],
+      "failed_functions": [],
+      "completion_rate": "4/4",
+      "validation_issues": [],
+      "critical_failures_count": 0
+    }
+  },
+  "decision": "skipped",
+  "reason": "Below remediation threshold"
+}

@@ -1,0 +1,1684 @@
+{
+  "analysis_timestamp": "2025-09-30-061446",
+  "total_files_analyzed": 110,
+  "markdown_files": {
+    "total": 0,
+    "compliant": [],
+    "review_needed": [],
+    "non_compliant": []
+  },
+  "yaml_files": {
+    "total": 100,
+    "compliant": [
+      {
+        "file": "code/code-debug-prompt.yaml",
+        "current_outputs": 3,
+        "output_list": [
+          "Debug_Analysis_Report-{{YYYY-MM-DD-HHMMSS}}.ipynb (exhaustive investigation of ALL issues)",
+          "Complete_Resolution_Log-{{YYYY-MM-DD-HHMMSS}}.ipynb (ALL fixes with atomic commits)",
+          "Root_Cause_Database-{{YYYY-MM-DD-HHMMSS}}.ipynb (ALL root causes documented)"
+        ],
+        "recommended_action": "none - compliant"
+      },
+      {
+        "file": "quality/quality-improve-code-prompt.yaml",
+        "current_outputs": 3,
+        "output_list": [
+          "Code_Quality_Improvements-{{YYYY-MM-DD-HHMMSS}}.ipynb (comprehensive analysis)",
+          "Complexity_Reduction_Report-{{YYYY-MM-DD-HHMMSS}}.md (complexity improvements)",
+          "Quality_Metrics_Comparison-{{YYYY-MM-DD-HHMMSS}}.json (before/after metrics)"
+        ],
+        "recommended_action": "none - compliant"
+      },
+      {
+        "file": "quality/quality-fix-simple-prompt.yaml",
+        "current_outputs": 2,
+        "output_list": [
+          "Simple_Quality_Fixes-{{YYYY-MM-DD-HHMMSS}}.ipynb (quality fix report)",
+          "Formatting_Results-{{YYYY-MM-DD-HHMMSS}}.md (formatting improvements)"
+        ],
+        "recommended_action": "none - compliant"
+      }
+    ],
+    "review_needed": [
+      {
+        "file": "code/code-general-prompt.yaml",
+        "current_outputs": 5,
+        "output_list": [
+          "Generated_Code-{{YYYY-MM-DD-HHMMSS}}.{ext} (main implementation file)",
+          "Code_Tests-{{YYYY-MM-DD-HHMMSS}}.{ext} (test file if requested)",
+          "Code_Documentation-{{YYYY-MM-DD-HHMMSS}}.md (documentation if requested)",
+          "Usage_Examples-{{YYYY-MM-DD-HHMMSS}}.{ext} (usage examples)",
+          "Configuration-{{YYYY-MM-DD-HHMMSS}}.{ext} (configuration files if needed)"
+        ],
+        "recommended_action": "review - acceptable for complex designs"
+      },
+      {
+        "file": "llm-mcp-prompts/llm-mcp-prompts-create-prompt.yaml",
+        "current_outputs": 5,
+        "output_list": [
+          "LLM_MCP_Prompts_Creation_Report-{{YYYY-MM-DD-HHMMSS}}.md (comprehensive prompt creation report)",
+          "Anthropic_Best_Practices_Validation-{{YYYY-MM-DD-HHMMSS}}.md (Anthropic standards validation)",
+          "MCP_Protocol_Compliance_Validation-{{YYYY-MM-DD-HHMMSS}}.md (MCP protocol compliance validation)",
+          "Prompt_Quality_Assessment-{{YYYY-MM-DD-HHMMSS}}.md (prompt quality analysis)",
+          "Prompt_Usage_Guide-{{YYYY-MM-DD-HHMMSS}}.md (prompt usage guide and next steps)"
+        ],
+        "recommended_action": "review - acceptable for complex designs"
+      },
+      {
+        "file": "llm-mcp-prompts/llm-mcp-prompts-manage-prompt.yaml",
+        "current_outputs": 5,
+        "output_list": [
+          "LLM_MCP_Prompts_Management_Report-{{YYYY-MM-DD-HHMMSS}}.md (comprehensive prompt management report)",
+          "Anthropic_Best_Practices_Validation-{{YYYY-MM-DD-HHMMSS}}.md (Anthropic standards validation)",
+          "MCP_Protocol_Compliance_Validation-{{YYYY-MM-DD-HHMMSS}}.md (MCP protocol compliance validation)",
+          "Prompt_Quality_Assessment-{{YYYY-MM-DD-HHMMSS}}.md (prompt quality analysis)",
+          "Prompt_Management_Next_Steps-{{YYYY-MM-DD-HHMMSS}}.md (prompt management next steps and guidance)"
+        ],
+        "recommended_action": "review - acceptable for complex designs"
+      },
+      {
+        "file": "quality/quality-generate-report-prompt.yaml",
+        "current_outputs": 4,
+        "output_list": [
+          "Quality_Remediation_Report-{{YYYY-MM-DD-HHMMSS}}.ipynb (comprehensive analysis)",
+          "Executive_Summary-{{YYYY-MM-DD-HHMMSS}}.pdf (stakeholder overview)",
+          "Technical_Report-{{YYYY-MM-DD-HHMMSS}}.md (implementation details)",
+          "Quality_Dashboard-{{YYYY-MM-DD-HHMMSS}}.html (interactive metrics)"
+        ],
+        "recommended_action": "review - acceptable for complex designs"
+      },
+      {
+        "file": "quality/quality-validate-fixes-prompt.yaml",
+        "current_outputs": 4,
+        "output_list": [
+          "Quality_Validation_Report-{{YYYY-MM-DD-HHMMSS}}.ipynb (comprehensive validation analysis)",
+          "Test_Results_Summary-{{YYYY-MM-DD-HHMMSS}}.json (test execution results)",
+          "Performance_Validation-{{YYYY-MM-DD-HHMMSS}}.md (performance analysis)",
+          "Deployment_Readiness_Certificate-{{YYYY-MM-DD-HHMMSS}}.md (certification status)"
+        ],
+        "recommended_action": "review - acceptable for complex designs"
+      }
+    ],
+    "non_compliant": [
+      {
+        "file": "deployments/deployments-k8s-architecture-prompt.yaml",
+        "current_outputs": 15,
+        "output_list": [
+          "K8s_Universal_Architecture_Design-{{YYYY-MM-DD-HHMMSS}}.ipynb (master architecture document)",
+          "Repository_Analysis_Report-{{YYYY-MM-DD-HHMMSS}}.ipynb (component analysis and dependency mapping)",
+          "Platform_Compatibility_Architecture-{{YYYY-MM-DD-HHMMSS}}.ipynb (universal deployment architecture)",
+          "Ingress_Controller_Architecture-{{YYYY-MM-DD-HHMMSS}}.ipynb (comprehensive ingress and routing design)",
+          "Microservices_Architecture_Design-{{YYYY-MM-DD-HHMMSS}}.ipynb (service mesh and communication patterns)",
+          "Security_Architecture_Blueprint-{{YYYY-MM-DD-HHMMSS}}.ipynb (comprehensive security design)",
+          "Observability_Stack_Architecture-{{YYYY-MM-DD-HHMMSS}}.ipynb (monitoring, logging, and tracing design)",
+          "CICD_GitOps_Architecture-{{YYYY-MM-DD-HHMMSS}}.ipynb (pipeline and deployment automation)",
+          "Scalability_Performance_Architecture-{{YYYY-MM-DD-HHMMSS}}.ipynb (autoscaling and performance design)",
+          "Disaster_Recovery_Architecture-{{YYYY-MM-DD-HHMMSS}}.ipynb (backup, recovery, and business continuity)",
+          "Implementation_Roadmap-{{YYYY-MM-DD-HHMMSS}}.md (step-by-step implementation guide)",
+          "Architectural_Decision_Records-{{YYYY-MM-DD-HHMMSS}}.md (ADR documentation)",
+          "Quickstart_Deployment_Guide-{{YYYY-MM-DD-HHMMSS}}.md (user-friendly deployment commands)",
+          "Lifecycle_Management_Guide-{{YYYY-MM-DD-HHMMSS}}.md (application lifecycle procedures)",
+          "Terraform_Infrastructure_Guide-{{YYYY-MM-DD-HHMMSS}}.md (infrastructure as code patterns)"
+        ],
+        "recommended_action": "consolidate/remove - exceeds limit"
+      },
+      {
+        "file": "deployments/deployments-planning-prompt.yaml",
+        "current_outputs": 15,
+        "output_list": [
+          "Universal_K8s_Deployment_Plan-{{YYYY-MM-DD-HHMMSS}}.ipynb (master planning document)",
+          "Application_Architecture_Analysis-{{YYYY-MM-DD-HHMMSS}}.ipynb (architecture and design patterns)",
+          "Platform_Compatibility_Matrix-{{YYYY-MM-DD-HHMMSS}}.ipynb (multi-platform deployment analysis)",
+          "Security_Architecture_Plan-{{YYYY-MM-DD-HHMMSS}}.ipynb (comprehensive security planning)",
+          "Microservices_Design_Patterns-{{YYYY-MM-DD-HHMMSS}}.ipynb (microservices architecture patterns)",
+          "CICD_Pipeline_Architecture-{{YYYY-MM-DD-HHMMSS}}.ipynb (complete CI/CD design)",
+          "Monitoring_Observability_Stack-{{YYYY-MM-DD-HHMMSS}}.ipynb (comprehensive observability design)",
+          "Scalability_Performance_Plan-{{YYYY-MM-DD-HHMMSS}}.ipynb (scaling and performance strategies)",
+          "Disaster_Recovery_Plan-{{YYYY-MM-DD-HHMMSS}}.ipynb (DR and business continuity)",
+          "Cost_Optimization_Strategy-{{YYYY-MM-DD-HHMMSS}}.ipynb (cost management and optimization)",
+          "Directory_Structure_Implementation-{{YYYY-MM-DD-HHMMSS}}.md (mandatory structure compliance)",
+          "Implementation_Roadmap-{{YYYY-MM-DD-HHMMSS}}.md (step-by-step implementation guide)",
+          "Quickstart_Deployment_Guide-{{YYYY-MM-DD-HHMMSS}}.md (user-friendly deployment commands)",
+          "Lifecycle_Management_Guide-{{YYYY-MM-DD-HHMMSS}}.md (application lifecycle procedures)",
+          "Terraform_Infrastructure_Guide-{{YYYY-MM-DD-HHMMSS}}.md (infrastructure as code patterns)"
+        ],
+        "recommended_action": "consolidate/remove - exceeds limit"
+      },
+      {
+        "file": "llm-mcp-prompts/llm-mcp-prompts-review-prompt.yaml",
+        "current_outputs": 14,
+        "output_list": [
+          "LLM_MCP_Prompts_Content_Review_Report-{{YYYY-MM-DD-HHMMSS}}.md (comprehensive content review report)",
+          "Anthropic_Best_Practices_Content_Assessment-{{YYYY-MM-DD-HHMMSS}}.md (Anthropic content standards validation)",
+          "Public_Standards_Content_Assessment-{{YYYY-MM-DD-HHMMSS}}.md (public prompt engineering content validation)",
+          "MCP_Compliance_Content_Assessment-{{YYYY-MM-DD-HHMMSS}}.md (MCP protocol content compliance validation)",
+          "Content_Quality_Assessment-{{YYYY-MM-DD-HHMMSS}}.md (content quality analysis)",
+          "Instruction_Precision_Analysis-{{YYYY-MM-DD-HHMMSS}}.md (instruction precision and specificity analysis)",
+          "Context_Appropriateness_Assessment-{{YYYY-MM-DD-HHMMSS}}.md (context appropriateness and relevance analysis)",
+          "Command_Reference_Validation-{{YYYY-MM-DD-HHMMSS}}.md (command reference and workflow validation)",
+          "Deliverable_Specification_Review-{{YYYY-MM-DD-HHMMSS}}.md (deliverable specification and documentation separation review)",
+          "YAML_Technology_Compliance_Assessment-{{YYYY-MM-DD-HHMMSS}}.md (YAML file existence and technology version compliance)",
+          "Content_Organization_Assessment-{{YYYY-MM-DD-HHMMSS}}.md (content organization and navigation structure assessment)",
+          "Content_Improvement_Recommendations-{{YYYY-MM-DD-HHMMSS}}.md (actionable content improvement recommendations)",
+          "Content_Implementation_Roadmap-{{YYYY-MM-DD-HHMMSS}}.md (content implementation roadmap and timeline)",
+          "Content_Compliance_Checklist-{{YYYY-MM-DD-HHMMSS}}.md (content compliance validation checklist)"
+        ],
+        "recommended_action": "consolidate/remove - exceeds limit"
+      },
+      {
+        "file": "quality/quality-code-performance-analysis-prompt.yaml",
+        "current_outputs": 14,
+        "output_list": [
+          "Performance_Analysis_Report-{{YYYY-MM-DD-HHMMSS}}.ipynb (comprehensive performance analysis)",
+          "Performance_Inventory_Baseline-{{YYYY-MM-DD-HHMMSS}}.xlsx (system components and metrics)",
+          "Response_Time_Analysis-{{YYYY-MM-DD-HHMMSS}}.ipynb (latency breakdown and assessment)",
+          "Throughput_Capacity_Analysis-{{YYYY-MM-DD-HHMMSS}}.ipynb (processing capacity assessment)",
+          "Resource_Utilization_Profiling-{{YYYY-MM-DD-HHMMSS}}.ipynb (CPU, memory, I/O analysis)",
+          "Database_Storage_Performance-{{YYYY-MM-DD-HHMMSS}}.ipynb (query and storage optimization)",
+          "Bottleneck_Analysis_Report-{{YYYY-MM-DD-HHMMSS}}.md (detailed findings and root causes)",
+          "Performance_Pattern_Detection-{{YYYY-MM-DD-HHMMSS}}.ipynb (patterns and anti-patterns)",
+          "Scalability_Assessment-{{YYYY-MM-DD-HHMMSS}}.ipynb (scaling analysis and capacity planning)",
+          "Optimization_Strategy_ROI-{{YYYY-MM-DD-HHMMSS}}.md (improvements with ROI analysis)",
+          "Performance_Monitoring_Strategy-{{YYYY-MM-DD-HHMMSS}}.md (monitoring and alerting plan)",
+          "Quick_Wins_Optimizations-{{YYYY-MM-DD-HHMMSS}}.md (immediate improvement opportunities)",
+          "Profiling_Results_Package-{{YYYY-MM-DD-HHMMSS}}.zip (flame graphs, traces, data)",
+          "Executive_Summary-{{YYYY-MM-DD-HHMMSS}}.pdf (key findings and recommendations)"
+        ],
+        "recommended_action": "consolidate/remove - exceeds limit"
+      },
+      {
+        "file": "quality/quality-code-validation-prompt.yaml",
+        "current_outputs": 13,
+        "output_list": [
+          "Validation_Report-{{YYYY-MM-DD-HHMMSS}}.ipynb (comprehensive validation analysis)",
+          "Requirements_Traceability_Matrix-{{YYYY-MM-DD-HHMMSS}}.xlsx (requirements coverage)",
+          "Technical_Verification_Report-{{YYYY-MM-DD-HHMMSS}}.ipynb (technical validation)",
+          "Functional_Validation_Report-{{YYYY-MM-DD-HHMMSS}}.ipynb (functional verification)",
+          "Security_Compliance_Report-{{YYYY-MM-DD-HHMMSS}}.ipynb (security validation)",
+          "Performance_Validation_Report-{{YYYY-MM-DD-HHMMSS}}.ipynb (performance verification)",
+          "Integration_Test_Report-{{YYYY-MM-DD-HHMMSS}}.ipynb (integration validation)",
+          "Quality_Metrics_Dashboard-{{YYYY-MM-DD-HHMMSS}}.html (quality assessment)",
+          "Compliance_Matrix-{{YYYY-MM-DD-HHMMSS}}.xlsx (standards compliance)",
+          "Deviation_Report-{{YYYY-MM-DD-HHMMSS}}.md (gaps and discrepancies)",
+          "Risk_Assessment-{{YYYY-MM-DD-HHMMSS}}.md (identified risks)",
+          "Remediation_Plan-{{YYYY-MM-DD-HHMMSS}}.md (required fixes)",
+          "Certification_Statement-{{YYYY-MM-DD-HHMMSS}}.pdf (production readiness)"
+        ],
+        "recommended_action": "consolidate/remove - exceeds limit"
+      },
+      {
+        "file": "quality/quality-code-operational-analysis-prompt.yaml",
+        "current_outputs": 12,
+        "output_list": [
+          "Operational_Analysis_Report-{{YYYY-MM-DD-HHMMSS}}.ipynb (comprehensive operational analysis)",
+          "System_Discovery_Inventory-{{YYYY-MM-DD-HHMMSS}}.xlsx (complete component mapping)",
+          "Performance_Analysis_Dashboard-{{YYYY-MM-DD-HHMMSS}}.html (interactive performance metrics)",
+          "Reliability_Assessment_Report-{{YYYY-MM-DD-HHMMSS}}.ipynb (availability and resilience analysis)",
+          "Security_Operational_Review-{{YYYY-MM-DD-HHMMSS}}.ipynb (security posture assessment)",
+          "Log_Trace_Analysis_Results-{{YYYY-MM-DD-HHMMSS}}.ipynb (pattern analysis and insights)",
+          "Cost_Efficiency_Analysis-{{YYYY-MM-DD-HHMMSS}}.pdf (financial and optimization insights)",
+          "Monitoring_Observability_Assessment-{{YYYY-MM-DD-HHMMSS}}.ipynb (coverage and gaps)",
+          "Operational_Risk_Register-{{YYYY-MM-DD-HHMMSS}}.md (risk assessment and mitigation)",
+          "Optimization_Roadmap-{{YYYY-MM-DD-HHMMSS}}.md (improvement plan and priorities)",
+          "Incident_Response_Playbooks-{{YYYY-MM-DD-HHMMSS}}.md (operational procedures)",
+          "Executive_Summary-{{YYYY-MM-DD-HHMMSS}}.pdf (key findings and recommendations)"
+        ],
+        "recommended_action": "consolidate/remove - exceeds limit"
+      },
+      {
+        "file": "deployments/deployments-app-planning-prompt.yaml",
+        "current_outputs": 11,
+        "output_list": [
+          "Deployment_Planning-{{YYYY-MM-DD-HHMMSS}}.ipynb (master planning document)",
+          "System_Analysis-{{YYYY-MM-DD-HHMMSS}}.ipynb (component inventory and dependencies)",
+          "Infrastructure_Requirements-{{YYYY-MM-DD-HHMMSS}}.ipynb (resource and capacity planning)",
+          "Deployment_Strategy-{{YYYY-MM-DD-HHMMSS}}.ipynb (strategy selection and implementation)",
+          "Risk_Assessment-{{YYYY-MM-DD-HHMMSS}}.ipynb (risk analysis and mitigation plans)",
+          "Security_Compliance-{{YYYY-MM-DD-HHMMSS}}.ipynb (security and compliance requirements)",
+          "Monitoring_Observability-{{YYYY-MM-DD-HHMMSS}}.ipynb (monitoring and alerting plans)",
+          "CICD_Pipeline-{{YYYY-MM-DD-HHMMSS}}.ipynb (automation and pipeline architecture)",
+          "Quickstart_Deployment_Guide-{{YYYY-MM-DD-HHMMSS}}.md (user-friendly deployment commands)",
+          "Lifecycle_Management_Guide-{{YYYY-MM-DD-HHMMSS}}.md (application lifecycle procedures)",
+          "Terraform_Infrastructure_Guide-{{YYYY-MM-DD-HHMMSS}}.md (infrastructure as code patterns)"
+        ],
+        "recommended_action": "consolidate/remove - exceeds limit"
+      },
+      {
+        "file": "deployments/deployments-implement-prompt.yaml",
+        "current_outputs": 11,
+        "output_list": [
+          "Deployment_Execution_Report-{{YYYY-MM-DD-HHMMSS}}.md (comprehensive deployment report)",
+          "Build_and_Push_Log-{{YYYY-MM-DD-HHMMSS}}.txt (container build and registry push log)",
+          "Kubernetes_Apply_Log-{{YYYY-MM-DD-HHMMSS}}.txt (kubectl apply execution log)",
+          "Health_Check_Results-{{YYYY-MM-DD-HHMMSS}}.json (health validation results)",
+          "Security_Validation_Report-{{YYYY-MM-DD-HHMMSS}}.md (security compliance validation)",
+          "Monitoring_Configuration_Log-{{YYYY-MM-DD-HHMMSS}}.txt (monitoring setup log)",
+          "Deployment_Metadata-{{YYYY-MM-DD-HHMMSS}}.json (deployment metadata and status)",
+          "Rollback_Instructions-{{YYYY-MM-DD-HHMMSS}}.md (rollback procedures and commands)",
+          "Quickstart_Deployment_Guide-{{YYYY-MM-DD-HHMMSS}}.md (user-friendly deployment commands)",
+          "Lifecycle_Management_Guide-{{YYYY-MM-DD-HHMMSS}}.md (application lifecycle procedures)",
+          "Terraform_Infrastructure_Guide-{{YYYY-MM-DD-HHMMSS}}.md (infrastructure as code patterns)"
+        ],
+        "recommended_action": "consolidate/remove - exceeds limit"
+      },
+      {
+        "file": "code/code-feature-design-prompt.yaml",
+        "current_outputs": 10,
+        "output_list": [
+          "Feature_Architecture-{{YYYY-MM-DD-HHMMSS}}.ipynb (comprehensive feature architecture design)",
+          "Technical_Specifications-{{YYYY-MM-DD-HHMMSS}}.ipynb (complete technical specifications)",
+          "API_Design-{{YYYY-MM-DD-HHMMSS}}.ipynb (API specifications and contracts)",
+          "Data_Model_Design-{{YYYY-MM-DD-HHMMSS}}.ipynb (data models and schemas)",
+          "Integration_Patterns-{{YYYY-MM-DD-HHMMSS}}.ipynb (integration architecture)",
+          "Security_Architecture-{{YYYY-MM-DD-HHMMSS}}.ipynb (security design and controls)",
+          "Performance_Design-{{YYYY-MM-DD-HHMMSS}}.ipynb (performance and scalability)",
+          "Observability_Architecture-{{YYYY-MM-DD-HHMMSS}}.ipynb (monitoring and observability)",
+          "Deployment_Architecture-{{YYYY-MM-DD-HHMMSS}}.ipynb (deployment and infrastructure)",
+          "SOLID_Compliance_Review-{{YYYY-MM-DD-HHMMSS}}.ipynb (SOLID/DRY/KISS validation)"
+        ],
+        "recommended_action": "consolidate/remove - exceeds limit"
+      },
+      {
+        "file": "docs/docs-code-documentation-prompt.yaml",
+        "current_outputs": 10,
+        "output_list": [
+          "Code_Documentation_Complete-{{YYYY-MM-DD-HHMMSS}}.ipynb (master documentation index)",
+          "API_Reference_Complete-{{YYYY-MM-DD-HHMMSS}}.ipynb (complete API documentation)",
+          "Developer_Guide_Complete-{{YYYY-MM-DD-HHMMSS}}.ipynb (developer implementation guide)",
+          "System_Component_Inventory-{{YYYY-MM-DD-HHMMSS}}.ipynb (complete component analysis)",
+          "Service_Documentation-{{YYYY-MM-DD-HHMMSS}}.ipynb (service topology and contracts)",
+          "Operations_Runbook-{{YYYY-MM-DD-HHMMSS}}.ipynb (operations and maintenance guide)",
+          "Security_Documentation-{{YYYY-MM-DD-HHMMSS}}.ipynb (security implementation guide)",
+          "Module_Dependencies-{{YYYY-MM-DD-HHMMSS}}.ipynb (module structure and dependencies)",
+          "Performance_Guide-{{YYYY-MM-DD-HHMMSS}}.ipynb (performance and optimization guide)",
+          "Troubleshooting_Guide-{{YYYY-MM-DD-HHMMSS}}.ipynb (troubleshooting and debugging guide)"
+        ],
+        "recommended_action": "consolidate/remove - exceeds limit"
+      },
+      {
+        "file": "docs/docs-enterprise-architecture-prompt.yaml",
+        "current_outputs": 10,
+        "output_list": [
+          "Enterprise_Architecture_Complete-{{YYYY-MM-DD-HHMMSS}}.ipynb (master architecture document)",
+          "System_Architecture_Overview-{{YYYY-MM-DD-HHMMSS}}.ipynb (high-level system design)",
+          "Component_Architecture-{{YYYY-MM-DD-HHMMSS}}.ipynb (detailed component specifications)",
+          "Service_Architecture-{{YYYY-MM-DD-HHMMSS}}.ipynb (service-level architecture patterns)",
+          "Data_Architecture-{{YYYY-MM-DD-HHMMSS}}.ipynb (data flows and models)",
+          "Security_Architecture-{{YYYY-MM-DD-HHMMSS}}.ipynb (security design and controls)",
+          "Performance_Architecture-{{YYYY-MM-DD-HHMMSS}}.ipynb (performance and scalability design)",
+          "Network_Architecture-{{YYYY-MM-DD-HHMMSS}}.ipynb (network topology and traffic flows)",
+          "Technical_Specifications-{{YYYY-MM-DD-HHMMSS}}.ipynb (detailed technical specifications)",
+          "Dependency_Analysis-{{YYYY-MM-DD-HHMMSS}}.ipynb (component dependency matrices)"
+        ],
+        "recommended_action": "consolidate/remove - exceeds limit"
+      },
+      {
+        "file": "fastapi/fastapi-api-endpoint-design-prompt.yaml",
+        "current_outputs": 10,
+        "output_list": [
+          "API_Endpoint_Design_Complete-{{YYYY-MM-DD-HHMMSS}}.ipynb (complete API endpoint architecture)",
+          "RESTful_URL_Patterns-{{YYYY-MM-DD-HHMMSS}}.ipynb (URL design and routing patterns)",
+          "HTTP_Methods_Status_Codes-{{YYYY-MM-DD-HHMMSS}}.ipynb (HTTP method and status code design)",
+          "Request_Response_Schemas-{{YYYY-MM-DD-HHMMSS}}.ipynb (Pydantic model designs)",
+          "Authentication_Authorization_Design-{{YYYY-MM-DD-HHMMSS}}.ipynb (security endpoint patterns)",
+          "Error_Response_Standardization-{{YYYY-MM-DD-HHMMSS}}.ipynb (error handling patterns)",
+          "Pagination_Filtering_Design-{{YYYY-MM-DD-HHMMSS}}.ipynb (query and pagination patterns)",
+          "File_Bulk_Operations_Design-{{YYYY-MM-DD-HHMMSS}}.ipynb (special operation patterns)",
+          "API_Versioning_Strategy-{{YYYY-MM-DD-HHMMSS}}.ipynb (versioning and compatibility design)",
+          "OpenAPI_Documentation_Design-{{YYYY-MM-DD-HHMMSS}}.ipynb (API documentation patterns)"
+        ],
+        "recommended_action": "consolidate/remove - exceeds limit"
+      },
+      {
+        "file": "fastapi/fastapi-application-implement-prompt.yaml",
+        "current_outputs": 10,
+        "output_list": [
+          "FastAPI_Implementation_Complete-{{YYYY-MM-DD-HHMMSS}}.ipynb (all FastAPI code implemented)",
+          "FastAPI_API_Endpoints_Inventory-{{YYYY-MM-DD-HHMMSS}}.ipynb (all API endpoints and routers)",
+          "FastAPI_Dependency_Injection_Report-{{YYYY-MM-DD-HHMMSS}}.ipynb (DI implementation validation)",
+          "Database_Integration_Implementation-{{YYYY-MM-DD-HHMMSS}}.ipynb (database layer implementation)",
+          "Authentication_Security_Implementation-{{YYYY-MM-DD-HHMMSS}}.ipynb (auth middleware implementation)",
+          "Pydantic_Models_Implementation-{{YYYY-MM-DD-HHMMSS}}.ipynb (schema and validation implementation)",
+          "Async_Patterns_Implementation-{{YYYY-MM-DD-HHMMSS}}.ipynb (async programming implementation)",
+          "Error_Handling_Implementation-{{YYYY-MM-DD-HHMMSS}}.ipynb (exception handling implementation)",
+          "Performance_Optimization_Report-{{YYYY-MM-DD-HHMMSS}}.ipynb (performance implementation results)",
+          "Zero_Test_Code_Cert-{{YYYY-MM-DD-HHMMSS}}.ipynb (no tests created certification)"
+        ],
+        "recommended_action": "consolidate/remove - exceeds limit"
+      },
+      {
+        "file": "fastapi/fastapi-architecture-design-prompt.yaml",
+        "current_outputs": 10,
+        "output_list": [
+          "FastAPI_Architecture_Design-{{YYYY-MM-DD-HHMMSS}}.ipynb (comprehensive FastAPI application architecture)",
+          "API_Router_Endpoint_Design-{{YYYY-MM-DD-HHMMSS}}.ipynb (API routing and endpoint specifications)",
+          "FastAPI_Dependency_Injection-{{YYYY-MM-DD-HHMMSS}}.ipynb (dependency injection and service layer design)",
+          "Database_Integration_Architecture-{{YYYY-MM-DD-HHMMSS}}.ipynb (database patterns and integration design)",
+          "Authentication_Authorization_Design-{{YYYY-MM-DD-HHMMSS}}.ipynb (security middleware and auth patterns)",
+          "Pydantic_Schema_Architecture-{{YYYY-MM-DD-HHMMSS}}.ipynb (request/response model design)",
+          "Async_Programming_Patterns-{{YYYY-MM-DD-HHMMSS}}.ipynb (async/await architecture for FastAPI)",
+          "Performance_Caching_Strategy-{{YYYY-MM-DD-HHMMSS}}.ipynb (performance optimization design)",
+          "Error_Handling_Observability-{{YYYY-MM-DD-HHMMSS}}.ipynb (error handling and monitoring design)",
+          "FastAPI_Testing_Architecture-{{YYYY-MM-DD-HHMMSS}}.ipynb (testing strategy and patterns)"
+        ],
+        "recommended_action": "consolidate/remove - exceeds limit"
+      },
+      {
+        "file": "fastapi/fastapi-code-quality-review-prompt.yaml",
+        "current_outputs": 10,
+        "output_list": [
+          "FastAPI_Quality_Review_Complete-{{YYYY-MM-DD-HHMMSS}}.ipynb (master quality analysis report)",
+          "Architecture_Compliance_Analysis-{{YYYY-MM-DD-HHMMSS}}.ipynb (Clean Architecture and SOLID compliance)",
+          "FastAPI_Best_Practices_Review-{{YYYY-MM-DD-HHMMSS}}.ipynb (FastAPI patterns and practices analysis)",
+          "API_Design_Quality_Assessment-{{YYYY-MM-DD-HHMMSS}}.ipynb (RESTful API design quality review)",
+          "Security_Vulnerability_Analysis-{{YYYY-MM-DD-HHMMSS}}.ipynb (security analysis and recommendations)",
+          "Performance_Optimization_Review-{{YYYY-MM-DD-HHMMSS}}.ipynb (performance analysis and optimization)",
+          "Database_Integration_Quality-{{YYYY-MM-DD-HHMMSS}}.ipynb (database patterns and implementation quality)",
+          "Dependency_Injection_Analysis-{{YYYY-MM-DD-HHMMSS}}.ipynb (DI pattern implementation review)",
+          "Code_Organization_Assessment-{{YYYY-MM-DD-HHMMSS}}.ipynb (code structure and maintainability)",
+          "Remediation_Recommendations-{{YYYY-MM-DD-HHMMSS}}.ipynb (specific improvement recommendations)"
+        ],
+        "recommended_action": "consolidate/remove - exceeds limit"
+      },
+      {
+        "file": "fastapi/fastapi-implementation-planning-prompt.yaml",
+        "current_outputs": 10,
+        "output_list": [
+          "FastAPI_Planning_Complete-{{YYYY-MM-DD-HHMMSS}}.ipynb (master FastAPI planning document)",
+          "FastAPI_Requirements_Analysis-{{YYYY-MM-DD-HHMMSS}}.ipynb (API requirements breakdown)",
+          "FastAPI_Task_Breakdown-{{YYYY-MM-DD-HHMMSS}}.ipynb (detailed task decomposition)",
+          "API_Resource_Timeline_Plan-{{YYYY-MM-DD-HHMMSS}}.ipynb (resource and timeline estimates)",
+          "FastAPI_Risk_Mitigation-{{YYYY-MM-DD-HHMMSS}}.ipynb (risk analysis and mitigation)",
+          "API_Quality_Validation_Plan-{{YYYY-MM-DD-HHMMSS}}.ipynb (quality gates and validation)",
+          "FastAPI_Implementation_Roadmap-{{YYYY-MM-DD-HHMMSS}}.ipynb (implementation roadmap)",
+          "FastAPI_Code_Reuse_Analysis-{{YYYY-MM-DD-HHMMSS}}.ipynb (existing codebase integration)",
+          "Database_Integration_Planning-{{YYYY-MM-DD-HHMMSS}}.ipynb (database implementation planning)",
+          "Authentication_Implementation_Plan-{{YYYY-MM-DD-HHMMSS}}.ipynb (security implementation planning)"
+        ],
+        "recommended_action": "consolidate/remove - exceeds limit"
+      },
+      {
+        "file": "fastapi/fastapi-service-dependency-patterns-prompt.yaml",
+        "current_outputs": 10,
+        "output_list": [
+          "Service_Layer_Architecture-{{YYYY-MM-DD-HHMMSS}}.ipynb (complete service layer design)",
+          "Dependency_Injection_Patterns-{{YYYY-MM-DD-HHMMSS}}.ipynb (FastAPI DI pattern specifications)",
+          "Repository_Pattern_Design-{{YYYY-MM-DD-HHMMSS}}.ipynb (repository interfaces and implementations)",
+          "Service_Composition_Orchestration-{{YYYY-MM-DD-HHMMSS}}.ipynb (service interaction patterns)",
+          "Domain_Application_Services-{{YYYY-MM-DD-HHMMSS}}.ipynb (business logic service design)",
+          "Dependency_Lifecycle_Management-{{YYYY-MM-DD-HHMMSS}}.ipynb (scoping and lifecycle patterns)",
+          "Event_Driven_Service_Communication-{{YYYY-MM-DD-HHMMSS}}.ipynb (event publishing patterns)",
+          "Transaction_Error_Handling-{{YYYY-MM-DD-HHMMSS}}.ipynb (error and transaction management)",
+          "Service_Testing_Strategies-{{YYYY-MM-DD-HHMMSS}}.ipynb (testing and mocking patterns)",
+          "Clean_Architecture_Compliance-{{YYYY-MM-DD-HHMMSS}}.ipynb (architecture principle validation)"
+        ],
+        "recommended_action": "consolidate/remove - exceeds limit"
+      },
+      {
+        "file": "fastapi/python-code-analysis-prompt.yaml",
+        "current_outputs": 10,
+        "output_list": [
+          "Python_Code_Analysis_Overview-{{YYYY-MM-DD-HHMMSS}}.ipynb (master architecture assessment)",
+          "Module_Structure_Analysis-{{YYYY-MM-DD-HHMMSS}}.ipynb (package and module organization)",
+          "Import_Dependency_Graph-{{YYYY-MM-DD-HHMMSS}}.ipynb (dependencies and circular imports)",
+          "Class_Hierarchy_Analysis-{{YYYY-MM-DD-HHMMSS}}.ipynb (OOP structure and inheritance)",
+          "Function_Complexity_Report-{{YYYY-MM-DD-HHMMSS}}.ipynb (complexity metrics and analysis)",
+          "Type_Annotation_Coverage-{{YYYY-MM-DD-HHMMSS}}.ipynb (type safety assessment)",
+          "Async_Concurrency_Analysis-{{YYYY-MM-DD-HHMMSS}}.ipynb (async patterns and threading)",
+          "Resource_Management_Patterns-{{YYYY-MM-DD-HHMMSS}}.ipynb (memory and resource handling)",
+          "Exception_Handling_Analysis-{{YYYY-MM-DD-HHMMSS}}.ipynb (error handling patterns)",
+          "Python_Best_Practices_Assessment-{{YYYY-MM-DD-HHMMSS}}.ipynb (Pythonic code evaluation)"
+        ],
+        "recommended_action": "consolidate/remove - exceeds limit"
+      },
+      {
+        "file": "fastapi/python-code-design-prompt.yaml",
+        "current_outputs": 10,
+        "output_list": [
+          "Python_Architecture_Design-{{YYYY-MM-DD-HHMMSS}}.ipynb (comprehensive Python architecture design)",
+          "SOLID_Principles_Implementation-{{YYYY-MM-DD-HHMMSS}}.ipynb (complete SOLID principles implementation)",
+          "Python_Class_Interface_Design-{{YYYY-MM-DD-HHMMSS}}.ipynb (class and interface specifications)",
+          "Design_Patterns_Architecture-{{YYYY-MM-DD-HHMMSS}}.ipynb (design pattern implementations)",
+          "Modern_Python_Features_Design-{{YYYY-MM-DD-HHMMSS}}.ipynb (dataclasses, ABC, typing architecture)",
+          "Type_System_Architecture-{{YYYY-MM-DD-HHMMSS}}.ipynb (type hints and static analysis design)",
+          "Error_Handling_Architecture-{{YYYY-MM-DD-HHMMSS}}.ipynb (exception and error handling design)",
+          "Async_Programming_Design-{{YYYY-MM-DD-HHMMSS}}.ipynb (async patterns and concurrency)",
+          "Python_Testing_Architecture-{{YYYY-MM-DD-HHMMSS}}.ipynb (testing strategy and patterns)",
+          "Code_Quality_Standards-{{YYYY-MM-DD-HHMMSS}}.ipynb (quality metrics and validation)"
+        ],
+        "recommended_action": "consolidate/remove - exceeds limit"
+      },
+      {
+        "file": "fastapi/python-code-quality-analysis-prompt.yaml",
+        "current_outputs": 10,
+        "output_list": [
+          "Python_Quality_Overview-{{YYYY-MM-DD-HHMMSS}}.ipynb (executive summary with metrics dashboard)",
+          "Module_Structure_Analysis-{{YYYY-MM-DD-HHMMSS}}.ipynb (module and package inventory)",
+          "SOLID_Principles_Assessment-{{YYYY-MM-DD-HHMMSS}}.ipynb (SOLID in Python context)",
+          "Design_Pattern_Analysis-{{YYYY-MM-DD-HHMMSS}}.ipynb (Pythonic patterns evaluation)",
+          "Anti_Pattern_Detection-{{YYYY-MM-DD-HHMMSS}}.ipynb (Python anti-patterns and code smells)",
+          "Type_Safety_Analysis-{{YYYY-MM-DD-HHMMSS}}.ipynb (type annotation and mypy compliance)",
+          "Security_Vulnerability_Assessment-{{YYYY-MM-DD-HHMMSS}}.ipynb (bandit and safety results)",
+          "Performance_Profiling_Results-{{YYYY-MM-DD-HHMMSS}}.ipynb (bottleneck analysis)",
+          "Complexity_Metrics_Report-{{YYYY-MM-DD-HHMMSS}}.ipynb (cyclomatic and cognitive complexity)",
+          "Quality_Improvement_Roadmap-{{YYYY-MM-DD-HHMMSS}}.ipynb (prioritized recommendations)"
+        ],
+        "recommended_action": "consolidate/remove - exceeds limit"
+      },
+      {
+        "file": "llm-mcp-prompts/llm-mcp-prompts-claude-code-write-prompt.yaml",
+        "current_outputs": 10,
+        "output_list": [
+          "Command_Creation_Report-{{YYYY-MM-DD-HHMMSS}}.md (comprehensive command creation report)",
+          "Command_Structure_Validation-{{YYYY-MM-DD-HHMMSS}}.md (command structure validation report)",
+          "MCP_Prompt_YAML_Creation-{{YYYY-MM-DD-HHMMSS}}.md (MCP prompt YAML creation report)",
+          "Command_Documentation_Creation-{{YYYY-MM-DD-HHMMSS}}.md (command documentation creation report)",
+          "Command_Reference_Validation-{{YYYY-MM-DD-HHMMSS}}.md (command reference validation report)",
+          "Deliverable_Specification_Validation-{{YYYY-MM-DD-HHMMSS}}.md (deliverable specification validation report)",
+          "Quickstart_Documentation_Creation-{{YYYY-MM-DD-HHMMSS}}.md (quickstart documentation creation report)",
+          "Lifecycle_Management_Integration-{{YYYY-MM-DD-HHMMSS}}.md (lifecycle management integration report)",
+          "Terraform_Infrastructure_Integration-{{YYYY-MM-DD-HHMMSS}}.md (terraform infrastructure integration report)",
+          "Command_Usage_Guide-{{YYYY-MM-DD-HHMMSS}}.md (command usage guide and next steps)"
+        ],
+        "recommended_action": "consolidate/remove - exceeds limit"
+      },
+      {
+        "file": "plugin/code-plugin-framework-design-prompt.yaml",
+        "current_outputs": 10,
+        "output_list": [
+          "Plugin_Framework_Architecture-{{YYYY-MM-DD-HHMMSS}}.ipynb (comprehensive plugin framework design)",
+          "Plugin_Technical_Specifications-{{YYYY-MM-DD-HHMMSS}}.ipynb (complete technical specs)",
+          "Plugin_API_Design-{{YYYY-MM-DD-HHMMSS}}.ipynb (API specifications and contracts)",
+          "Extension_Point_Architecture-{{YYYY-MM-DD-HHMMSS}}.ipynb (extension point patterns)",
+          "Registry_Integration_Design-{{YYYY-MM-DD-HHMMSS}}.ipynb (registry integration architecture)",
+          "Hot_Loading_Architecture-{{YYYY-MM-DD-HHMMSS}}.ipynb (hot-loading design and specs)",
+          "Plugin_Security_Architecture-{{YYYY-MM-DD-HHMMSS}}.ipynb (security and isolation design)",
+          "Plugin_Lifecycle_Design-{{YYYY-MM-DD-HHMMSS}}.ipynb (lifecycle management patterns)",
+          "Plugin_Communication_Patterns-{{YYYY-MM-DD-HHMMSS}}.ipynb (inter-plugin communication)",
+          "SOLID_Compliance_Review-{{YYYY-MM-DD-HHMMSS}}.ipynb (SOLID/DRY/KISS validation)"
+        ],
+        "recommended_action": "consolidate/remove - exceeds limit"
+      },
+      {
+        "file": "python/python-code-analysis-prompt.yaml",
+        "current_outputs": 10,
+        "output_list": [
+          "Python_Code_Analysis_Overview-{{YYYY-MM-DD-HHMMSS}}.ipynb (master architecture assessment)",
+          "Module_Structure_Analysis-{{YYYY-MM-DD-HHMMSS}}.ipynb (package and module organization)",
+          "Import_Dependency_Graph-{{YYYY-MM-DD-HHMMSS}}.ipynb (dependencies and circular imports)",
+          "Class_Hierarchy_Analysis-{{YYYY-MM-DD-HHMMSS}}.ipynb (OOP structure and inheritance)",
+          "Function_Complexity_Report-{{YYYY-MM-DD-HHMMSS}}.ipynb (complexity metrics and analysis)",
+          "Type_Annotation_Coverage-{{YYYY-MM-DD-HHMMSS}}.ipynb (type safety assessment)",
+          "Async_Concurrency_Analysis-{{YYYY-MM-DD-HHMMSS}}.ipynb (async patterns and threading)",
+          "Resource_Management_Patterns-{{YYYY-MM-DD-HHMMSS}}.ipynb (memory and resource handling)",
+          "Exception_Handling_Analysis-{{YYYY-MM-DD-HHMMSS}}.ipynb (error handling patterns)",
+          "Python_Best_Practices_Assessment-{{YYYY-MM-DD-HHMMSS}}.ipynb (Pythonic code evaluation)"
+        ],
+        "recommended_action": "consolidate/remove - exceeds limit"
+      },
+      {
+        "file": "python/python-code-design-prompt.yaml",
+        "current_outputs": 10,
+        "output_list": [
+          "Python_Architecture_Design-{{YYYY-MM-DD-HHMMSS}}.ipynb (comprehensive Python architecture design)",
+          "SOLID_Principles_Implementation-{{YYYY-MM-DD-HHMMSS}}.ipynb (complete SOLID principles implementation)",
+          "Python_Class_Interface_Design-{{YYYY-MM-DD-HHMMSS}}.ipynb (class and interface specifications)",
+          "Design_Patterns_Architecture-{{YYYY-MM-DD-HHMMSS}}.ipynb (design pattern implementations)",
+          "Modern_Python_Features_Design-{{YYYY-MM-DD-HHMMSS}}.ipynb (dataclasses, ABC, typing architecture)",
+          "Type_System_Architecture-{{YYYY-MM-DD-HHMMSS}}.ipynb (type hints and static analysis design)",
+          "Error_Handling_Architecture-{{YYYY-MM-DD-HHMMSS}}.ipynb (exception and error handling design)",
+          "Async_Programming_Design-{{YYYY-MM-DD-HHMMSS}}.ipynb (async patterns and concurrency)",
+          "Python_Testing_Architecture-{{YYYY-MM-DD-HHMMSS}}.ipynb (testing strategy and patterns)",
+          "Code_Quality_Standards-{{YYYY-MM-DD-HHMMSS}}.ipynb (quality metrics and validation)"
+        ],
+        "recommended_action": "consolidate/remove - exceeds limit"
+      },
+      {
+        "file": "python/python-code-quality-analysis-prompt.yaml",
+        "current_outputs": 10,
+        "output_list": [
+          "Python_Quality_Overview-{{YYYY-MM-DD-HHMMSS}}.ipynb (executive summary with metrics dashboard)",
+          "Module_Structure_Analysis-{{YYYY-MM-DD-HHMMSS}}.ipynb (module and package inventory)",
+          "SOLID_Principles_Assessment-{{YYYY-MM-DD-HHMMSS}}.ipynb (SOLID in Python context)",
+          "Design_Pattern_Analysis-{{YYYY-MM-DD-HHMMSS}}.ipynb (Pythonic patterns evaluation)",
+          "Anti_Pattern_Detection-{{YYYY-MM-DD-HHMMSS}}.ipynb (Python anti-patterns and code smells)",
+          "Type_Safety_Analysis-{{YYYY-MM-DD-HHMMSS}}.ipynb (type annotation and mypy compliance)",
+          "Security_Vulnerability_Assessment-{{YYYY-MM-DD-HHMMSS}}.ipynb (bandit and safety results)",
+          "Performance_Profiling_Results-{{YYYY-MM-DD-HHMMSS}}.ipynb (bottleneck analysis)",
+          "Complexity_Metrics_Report-{{YYYY-MM-DD-HHMMSS}}.ipynb (cyclomatic and cognitive complexity)",
+          "Quality_Improvement_Roadmap-{{YYYY-MM-DD-HHMMSS}}.ipynb (prioritized recommendations)"
+        ],
+        "recommended_action": "consolidate/remove - exceeds limit"
+      },
+      {
+        "file": "quality/quality-code-deduplication-analysis-prompt.yaml",
+        "current_outputs": 10,
+        "output_list": [
+          "Complete_Duplication_Analysis-{{YYYY-MM-DD-HHMMSS}}.ipynb (comprehensive deduplication findings)",
+          "AST_Parsing_Results-{{YYYY-MM-DD-HHMMSS}}.ipynb (complete AST analysis and fingerprinting)",
+          "Duplication_Detection_Report-{{YYYY-MM-DD-HHMMSS}}.ipynb (all exact, near, and semantic duplicates)",
+          "Pattern_Analysis_Results-{{YYYY-MM-DD-HHMMSS}}.ipynb (design patterns and anti-patterns)",
+          "Technical_Debt_Assessment-{{YYYY-MM-DD-HHMMSS}}.ipynb (impact analysis and debt calculation)",
+          "Refactoring_Implementation_Log-{{YYYY-MM-DD-HHMMSS}}.ipynb (detailed refactoring changes)",
+          "Test_Coverage_Report-{{YYYY-MM-DD-HHMMSS}}.ipynb (comprehensive verification results)",
+          "Git_Commit_History-{{YYYY-MM-DD-HHMMSS}}.ipynb (atomic commit tracking)",
+          "Quality_Metrics_Dashboard-{{YYYY-MM-DD-HHMMSS}}.ipynb (before/after metrics)",
+          "Zero_Duplication_Certificate-{{YYYY-MM-DD-HHMMSS}}.ipynb (final validation and certification)"
+        ],
+        "recommended_action": "consolidate/remove - exceeds limit"
+      },
+      {
+        "file": "quality/quality-code-lint-and-quality-check-prompt.v2.yaml",
+        "current_outputs": 10,
+        "output_list": [
+          "Code_Lint_Quality_Check_Report-{{YYYY-MM-DD-HHMMSS}}.txt (comprehensive quality analysis report)",
+          "Linting_Analysis_Results-{{YYYY-MM-DD-HHMMSS}}.txt (detailed linting findings and fixes)",
+          "Formatting_Improvements_Log-{{YYYY-MM-DD-HHMMSS}}.txt (formatting fixes applied)",
+          "Type_Checking_Results-{{YYYY-MM-DD-HHMMSS}}.txt (type analysis and improvements)",
+          "Complexity_Analysis_Results-{{YYYY-MM-DD-HHMMSS}}.txt (complexity assessment for remediation)",
+          "Deduplication_Findings-{{YYYY-MM-DD-HHMMSS}}.txt (duplicate pattern analysis)",
+          "Safe_Fixes_Applied_Log-{{YYYY-MM-DD-HHMMSS}}.txt (all safe fixes documentation)",
+          "Build_Test_Verification-{{YYYY-MM-DD-HHMMSS}}.txt (functionality verification results)",
+          "Quality_Metrics_Dashboard-{{YYYY-MM-DD-HHMMSS}}.txt (before/after metrics)",
+          "Remediation_Handoff_Document-{{YYYY-MM-DD-HHMMSS}}.txt (next steps and flagged issues)"
+        ],
+        "recommended_action": "consolidate/remove - exceeds limit"
+      },
+      {
+        "file": "quality/quality-code-lint-and-quality-check-prompt.yaml",
+        "current_outputs": 10,
+        "output_list": [
+          "Code_Lint_Quality_Check_Report-{{YYYY-MM-DD-HHMMSS}}.txt (comprehensive quality analysis report)",
+          "Linting_Analysis_Results-{{YYYY-MM-DD-HHMMSS}}.txt (detailed linting findings and fixes)",
+          "Formatting_Improvements_Log-{{YYYY-MM-DD-HHMMSS}}.txt (formatting fixes applied)",
+          "Type_Checking_Results-{{YYYY-MM-DD-HHMMSS}}.txt (type analysis and improvements)",
+          "Complexity_Analysis_Results-{{YYYY-MM-DD-HHMMSS}}.txt (complexity assessment for remediation)",
+          "Deduplication_Findings-{{YYYY-MM-DD-HHMMSS}}.txt (duplicate pattern analysis)",
+          "Safe_Fixes_Applied_Log-{{YYYY-MM-DD-HHMMSS}}.txt (all safe fixes documentation)",
+          "Build_Test_Verification-{{YYYY-MM-DD-HHMMSS}}.txt (functionality verification results)",
+          "Quality_Metrics_Dashboard-{{YYYY-MM-DD-HHMMSS}}.txt (before/after metrics)",
+          "Remediation_Handoff_Document-{{YYYY-MM-DD-HHMMSS}}.txt (next steps and flagged issues)"
+        ],
+        "recommended_action": "consolidate/remove - exceeds limit"
+      },
+      {
+        "file": "quality/quality-code-security-analysis-prompt.yaml",
+        "current_outputs": 10,
+        "output_list": [
+          "Security_Analysis_Report-{{YYYY-MM-DD-HHMMSS}}.ipynb (comprehensive security assessment)",
+          "Vulnerability_Inventory-{{YYYY-MM-DD-HHMMSS}}.xlsx (detailed vulnerability catalog)",
+          "Threat_Model-{{YYYY-MM-DD-HHMMSS}}.md (STRIDE analysis and attack scenarios)",
+          "Compliance_Matrix-{{YYYY-MM-DD-HHMMSS}}.xlsx (framework compliance status)",
+          "Risk_Assessment-{{YYYY-MM-DD-HHMMSS}}.md (CVSS scoring and business impact)",
+          "Penetration_Test_Plan-{{YYYY-MM-DD-HHMMSS}}.md (high-risk targets and procedures)",
+          "Remediation_Roadmap-{{YYYY-MM-DD-HHMMSS}}.md (prioritized security improvements)",
+          "Security_Architecture_Review-{{YYYY-MM-DD-HHMMSS}}.pdf (architecture analysis and diagrams)",
+          "Executive_Security_Summary-{{YYYY-MM-DD-HHMMSS}}.pdf (executive overview and recommendations)",
+          "Security_Playbook-{{YYYY-MM-DD-HHMMSS}}.md (incident response and security procedures)"
+        ],
+        "recommended_action": "consolidate/remove - exceeds limit"
+      },
+      {
+        "file": "quality/quality-fix-dependencies-prompt.yaml",
+        "current_outputs": 10,
+        "output_list": [
+          "Dependency_Management_Report-{{YYYY-MM-DD-HHMMSS}}.ipynb (comprehensive management analysis)",
+          "Security_Vulnerability_Assessment-{{YYYY-MM-DD-HHMMSS}}.ipynb (security analysis and fixes)",
+          "Version_Conflict_Resolution-{{YYYY-MM-DD-HHMMSS}}.ipynb (conflict resolution details)",
+          "Dependency_Optimization_Report-{{YYYY-MM-DD-HHMMSS}}.ipynb (optimization results)",
+          "License_Compliance_Analysis-{{YYYY-MM-DD-HHMMSS}}.ipynb (license verification)",
+          "Supply_Chain_Security_Report-{{YYYY-MM-DD-HHMMSS}}.ipynb (supply chain analysis)",
+          "Compatibility_Testing_Results-{{YYYY-MM-DD-HHMMSS}}.ipynb (testing validation)",
+          "Management_Audit_Trail-{{YYYY-MM-DD-HHMMSS}}.md (detailed change history)",
+          "Security_Improvements_Summary-{{YYYY-MM-DD-HHMMSS}}.json (structured security report)",
+          "Production_Readiness_Certificate-{{YYYY-MM-DD-HHMMSS}}.md (certification status)"
+        ],
+        "recommended_action": "consolidate/remove - exceeds limit"
+      },
+      {
+        "file": "webui/python-code-analysis-prompt.yaml",
+        "current_outputs": 10,
+        "output_list": [
+          "Python_Code_Analysis_Overview-{{YYYY-MM-DD-HHMMSS}}.ipynb (master architecture assessment)",
+          "Module_Structure_Analysis-{{YYYY-MM-DD-HHMMSS}}.ipynb (package and module organization)",
+          "Import_Dependency_Graph-{{YYYY-MM-DD-HHMMSS}}.ipynb (dependencies and circular imports)",
+          "Class_Hierarchy_Analysis-{{YYYY-MM-DD-HHMMSS}}.ipynb (OOP structure and inheritance)",
+          "Function_Complexity_Report-{{YYYY-MM-DD-HHMMSS}}.ipynb (complexity metrics and analysis)",
+          "Type_Annotation_Coverage-{{YYYY-MM-DD-HHMMSS}}.ipynb (type safety assessment)",
+          "Async_Concurrency_Analysis-{{YYYY-MM-DD-HHMMSS}}.ipynb (async patterns and threading)",
+          "Resource_Management_Patterns-{{YYYY-MM-DD-HHMMSS}}.ipynb (memory and resource handling)",
+          "Exception_Handling_Analysis-{{YYYY-MM-DD-HHMMSS}}.ipynb (error handling patterns)",
+          "Python_Best_Practices_Assessment-{{YYYY-MM-DD-HHMMSS}}.ipynb (Pythonic code evaluation)"
+        ],
+        "recommended_action": "consolidate/remove - exceeds limit"
+      },
+      {
+        "file": "webui/python-code-design-prompt.yaml",
+        "current_outputs": 10,
+        "output_list": [
+          "Python_Architecture_Design-{{YYYY-MM-DD-HHMMSS}}.ipynb (comprehensive Python architecture design)",
+          "SOLID_Principles_Implementation-{{YYYY-MM-DD-HHMMSS}}.ipynb (complete SOLID principles implementation)",
+          "Python_Class_Interface_Design-{{YYYY-MM-DD-HHMMSS}}.ipynb (class and interface specifications)",
+          "Design_Patterns_Architecture-{{YYYY-MM-DD-HHMMSS}}.ipynb (design pattern implementations)",
+          "Modern_Python_Features_Design-{{YYYY-MM-DD-HHMMSS}}.ipynb (dataclasses, ABC, typing architecture)",
+          "Type_System_Architecture-{{YYYY-MM-DD-HHMMSS}}.ipynb (type hints and static analysis design)",
+          "Error_Handling_Architecture-{{YYYY-MM-DD-HHMMSS}}.ipynb (exception and error handling design)",
+          "Async_Programming_Design-{{YYYY-MM-DD-HHMMSS}}.ipynb (async patterns and concurrency)",
+          "Python_Testing_Architecture-{{YYYY-MM-DD-HHMMSS}}.ipynb (testing strategy and patterns)",
+          "Code_Quality_Standards-{{YYYY-MM-DD-HHMMSS}}.ipynb (quality metrics and validation)"
+        ],
+        "recommended_action": "consolidate/remove - exceeds limit"
+      },
+      {
+        "file": "webui/python-code-quality-analysis-prompt.yaml",
+        "current_outputs": 10,
+        "output_list": [
+          "Python_Quality_Overview-{{YYYY-MM-DD-HHMMSS}}.ipynb (executive summary with metrics dashboard)",
+          "Module_Structure_Analysis-{{YYYY-MM-DD-HHMMSS}}.ipynb (module and package inventory)",
+          "SOLID_Principles_Assessment-{{YYYY-MM-DD-HHMMSS}}.ipynb (SOLID in Python context)",
+          "Design_Pattern_Analysis-{{YYYY-MM-DD-HHMMSS}}.ipynb (Pythonic patterns evaluation)",
+          "Anti_Pattern_Detection-{{YYYY-MM-DD-HHMMSS}}.ipynb (Python anti-patterns and code smells)",
+          "Type_Safety_Analysis-{{YYYY-MM-DD-HHMMSS}}.ipynb (type annotation and mypy compliance)",
+          "Security_Vulnerability_Assessment-{{YYYY-MM-DD-HHMMSS}}.ipynb (bandit and safety results)",
+          "Performance_Profiling_Results-{{YYYY-MM-DD-HHMMSS}}.ipynb (bottleneck analysis)",
+          "Complexity_Metrics_Report-{{YYYY-MM-DD-HHMMSS}}.ipynb (cyclomatic and cognitive complexity)",
+          "Quality_Improvement_Roadmap-{{YYYY-MM-DD-HHMMSS}}.ipynb (prioritized recommendations)"
+        ],
+        "recommended_action": "consolidate/remove - exceeds limit"
+      },
+      {
+        "file": "deployments/deployments-app-deploy-prompt.yaml",
+        "current_outputs": 9,
+        "output_list": [
+          "Deployment_Report-{{YYYY-MM-DD-HHMMSS}}.md (comprehensive deployment report)",
+          "Build_Artifacts_Log-{{YYYY-MM-DD-HHMMSS}}.txt (build process documentation)",
+          "Health_Check_Results-{{YYYY-MM-DD-HHMMSS}}.json (health validation results)",
+          "Deployment_Validation-{{YYYY-MM-DD-HHMMSS}}.md (validation and testing results)",
+          "Monitoring_Setup-{{YYYY-MM-DD-HHMMSS}}.md (monitoring configuration guide)",
+          "Rollback_Procedures-{{YYYY-MM-DD-HHMMSS}}.md (rollback instructions)",
+          "Quickstart_Deployment_Guide-{{YYYY-MM-DD-HHMMSS}}.md (user-friendly deployment commands)",
+          "Lifecycle_Management_Guide-{{YYYY-MM-DD-HHMMSS}}.md (application lifecycle procedures)",
+          "Terraform_Infrastructure_Guide-{{YYYY-MM-DD-HHMMSS}}.md (infrastructure as code patterns)"
+        ],
+        "recommended_action": "consolidate/remove - exceeds limit"
+      },
+      {
+        "file": "deployments/deployments-k8s-deploy-prompt.yaml",
+        "current_outputs": 9,
+        "output_list": [
+          "K8s_Deployment_Report-{{YYYY-MM-DD-HHMMSS}}.md (comprehensive K8s deployment report)",
+          "K8s_Build_Artifacts_Log-{{YYYY-MM-DD-HHMMSS}}.txt (K8s build process documentation)",
+          "K8s_Health_Check_Results-{{YYYY-MM-DD-HHMMSS}}.json (K8s health validation results)",
+          "K8s_Deployment_Validation-{{YYYY-MM-DD-HHMMSS}}.md (K8s validation and testing results)",
+          "K8s_Monitoring_Setup-{{YYYY-MM-DD-HHMMSS}}.md (K8s monitoring configuration guide)",
+          "K8s_Rollback_Procedures-{{YYYY-MM-DD-HHMMSS}}.md (K8s rollback instructions)",
+          "K8s_Quickstart_Deployment_Guide-{{YYYY-MM-DD-HHMMSS}}.md (user-friendly K8s deployment commands)",
+          "K8s_Lifecycle_Management_Guide-{{YYYY-MM-DD-HHMMSS}}.md (K8s application lifecycle procedures)",
+          "K8s_Terraform_Infrastructure_Guide-{{YYYY-MM-DD-HHMMSS}}.md (K8s infrastructure as code patterns)"
+        ],
+        "recommended_action": "consolidate/remove - exceeds limit"
+      },
+      {
+        "file": "docs/docs-diataxis-prompt.yaml",
+        "current_outputs": 9,
+        "output_list": [
+          "Diataxis_Documentation_Complete-{{YYYY-MM-DD-HHMMSS}}.ipynb (master Diataxis document)",
+          "Tutorial_Documentation-{{YYYY-MM-DD-HHMMSS}}.ipynb (learning-oriented tutorials if applicable)",
+          "How_To_Guide_Documentation-{{YYYY-MM-DD-HHMMSS}}.ipynb (task-oriented guides if applicable)",
+          "Reference_Documentation-{{YYYY-MM-DD-HHMMSS}}.ipynb (information-oriented reference if applicable)",
+          "Explanation_Documentation-{{YYYY-MM-DD-HHMMSS}}.ipynb (understanding-oriented explanations if applicable)",
+          "Documentation_Type_Analysis-{{YYYY-MM-DD-HHMMSS}}.ipynb (type selection rationale)",
+          "Quality_Assurance_Report-{{YYYY-MM-DD-HHMMSS}}.ipynb (QA checklist and validation)",
+          "User_Journey_Mapping-{{YYYY-MM-DD-HHMMSS}}.ipynb (user experience analysis)",
+          "Framework_Compliance_Validation-{{YYYY-MM-DD-HHMMSS}}.ipynb (Diataxis adherence verification)"
+        ],
+        "recommended_action": "consolidate/remove - exceeds limit"
+      },
+      {
+        "file": "fastapi/python-code-framework-implement-prompt.yaml",
+        "current_outputs": 9,
+        "output_list": [
+          "Python_Implementation_Complete-{{YYYY-MM-DD-HHMMSS}}.ipynb (all Python code implemented)",
+          "Python_Component_Inventory-{{YYYY-MM-DD-HHMMSS}}.ipynb (all Python components)",
+          "Code_Quality_Report-{{YYYY-MM-DD-HHMMSS}}.ipynb (SOLID/DRY/KISS validation)",
+          "Service_Layer_Report-{{YYYY-MM-DD-HHMMSS}}.ipynb (service implementation)",
+          "Data_Layer_Implementation-{{YYYY-MM-DD-HHMMSS}}.ipynb (data layer functionality)",
+          "Security_Implementation-{{YYYY-MM-DD-HHMMSS}}.ipynb (security measures)",
+          "Performance_Validation-{{YYYY-MM-DD-HHMMSS}}.ipynb (performance results)",
+          "API_Contracts_Met-{{YYYY-MM-DD-HHMMSS}}.ipynb (API compliance)",
+          "Zero_Test_Code_Cert-{{YYYY-MM-DD-HHMMSS}}.ipynb (no tests created)"
+        ],
+        "recommended_action": "consolidate/remove - exceeds limit"
+      },
+      {
+        "file": "llm-mcp-prompts/llm-mcp-prompts-claude-code-review-prompt.yaml",
+        "current_outputs": 9,
+        "output_list": [
+          "Claude_Code_Review_Report-{{YYYY-MM-DD-HHMMSS}}.md (comprehensive review report)",
+          "Anthropic_Best_Practices_Assessment-{{YYYY-MM-DD-HHMMSS}}.md (Anthropic standards validation)",
+          "Public_Standards_Assessment-{{YYYY-MM-DD-HHMMSS}}.md (public prompt engineering validation)",
+          "MCP_Compliance_Assessment-{{YYYY-MM-DD-HHMMSS}}.md (MCP protocol compliance validation)",
+          "Documentation_Quality_Assessment-{{YYYY-MM-DD-HHMMSS}}.md (documentation quality analysis)",
+          "Structure_Analysis_Report-{{YYYY-MM-DD-HHMMSS}}.md (structure and organization analysis)",
+          "Improvement_Recommendations-{{YYYY-MM-DD-HHMMSS}}.md (actionable improvement recommendations)",
+          "Implementation_Roadmap-{{YYYY-MM-DD-HHMMSS}}.md (implementation roadmap and timeline)",
+          "Compliance_Checklist-{{YYYY-MM-DD-HHMMSS}}.md (compliance validation checklist)"
+        ],
+        "recommended_action": "consolidate/remove - exceeds limit"
+      },
+      {
+        "file": "plugin/code-plugin-framework-implement-prompt.yaml",
+        "current_outputs": 9,
+        "output_list": [
+          "Plugin_Implementation_Complete-{{YYYY-MM-DD-HHMMSS}}.ipynb (all plugin code implemented)",
+          "Plugin_Framework_Inventory-{{YYYY-MM-DD-HHMMSS}}.ipynb (all plugin components)",
+          "Plugin_Quality_Report-{{YYYY-MM-DD-HHMMSS}}.ipynb (SOLID/DRY/KISS validation)",
+          "Registry_Integration_Report-{{YYYY-MM-DD-HHMMSS}}.ipynb (registry implementation)",
+          "Hot_Loading_Implementation-{{YYYY-MM-DD-HHMMSS}}.ipynb (hot-loading functionality)",
+          "Plugin_Security_Implementation-{{YYYY-MM-DD-HHMMSS}}.ipynb (security measures)",
+          "Plugin_Performance_Validation-{{YYYY-MM-DD-HHMMSS}}.ipynb (performance results)",
+          "Plugin_Contracts_Met-{{YYYY-MM-DD-HHMMSS}}.ipynb (contract compliance)",
+          "Zero_Test_Code_Cert-{{YYYY-MM-DD-HHMMSS}}.ipynb (no tests created)"
+        ],
+        "recommended_action": "consolidate/remove - exceeds limit"
+      },
+      {
+        "file": "python/python-code-framework-implement-prompt.yaml",
+        "current_outputs": 9,
+        "output_list": [
+          "Python_Implementation_Complete-{{YYYY-MM-DD-HHMMSS}}.ipynb (all Python code implemented)",
+          "Python_Component_Inventory-{{YYYY-MM-DD-HHMMSS}}.ipynb (all Python components)",
+          "Code_Quality_Report-{{YYYY-MM-DD-HHMMSS}}.ipynb (SOLID/DRY/KISS validation)",
+          "Service_Layer_Report-{{YYYY-MM-DD-HHMMSS}}.ipynb (service implementation)",
+          "Data_Layer_Implementation-{{YYYY-MM-DD-HHMMSS}}.ipynb (data layer functionality)",
+          "Security_Implementation-{{YYYY-MM-DD-HHMMSS}}.ipynb (security measures)",
+          "Performance_Validation-{{YYYY-MM-DD-HHMMSS}}.ipynb (performance results)",
+          "API_Contracts_Met-{{YYYY-MM-DD-HHMMSS}}.ipynb (API compliance)",
+          "Zero_Test_Code_Cert-{{YYYY-MM-DD-HHMMSS}}.ipynb (no tests created)"
+        ],
+        "recommended_action": "consolidate/remove - exceeds limit"
+      },
+      {
+        "file": "quality/quality-fix-security-prompt.yaml",
+        "current_outputs": 9,
+        "output_list": [
+          "Security_Remediation_Report-{{YYYY-MM-DD-HHMMSS}}.ipynb (comprehensive security analysis)",
+          "Vulnerability_Assessment_Results-{{YYYY-MM-DD-HHMMSS}}.ipynb (vulnerability analysis)",
+          "Critical_Fixes_Implementation-{{YYYY-MM-DD-HHMMSS}}.ipynb (critical fix details)",
+          "Authentication_Authorization_Enhancement-{{YYYY-MM-DD-HHMMSS}}.ipynb (access control improvements)",
+          "Data_Protection_Implementation-{{YYYY-MM-DD-HHMMSS}}.ipynb (encryption and protection)",
+          "Security_Testing_Results-{{YYYY-MM-DD-HHMMSS}}.ipynb (testing validation)",
+          "Compliance_Report-{{YYYY-MM-DD-HHMMSS}}.ipynb (compliance status)",
+          "Security_Audit_Trail-{{YYYY-MM-DD-HHMMSS}}.md (detailed security history)",
+          "Security_Certification-{{YYYY-MM-DD-HHMMSS}}.md (production readiness)"
+        ],
+        "recommended_action": "consolidate/remove - exceeds limit"
+      },
+      {
+        "file": "sub-agents/sub-agents-creation-prompt.yaml",
+        "current_outputs": 9,
+        "output_list": [
+          "Meta_Recursive_SubAgent_Creation_Report-{{YYYY-MM-DD-HHMMSS}}.md (comprehensive meta-recursive sub-agent creation report)",
+          "Existing_SubAgent_Ecosystem_Analysis-{{YYYY-MM-DD-HHMMSS}}.md (existing sub-agent ecosystem analysis report)",
+          "Meta_Recursive_SubAgent_Structure_Planning-{{YYYY-MM-DD-HHMMSS}}.md (meta-recursive sub-agent structure planning report)",
+          "Meta_Recursive_SubAgent_Quality_Assurance-{{YYYY-MM-DD-HHMMSS}}.md (meta-recursive sub-agent quality assurance report)",
+          "Meta_Recursive_SubAgent_Architectural_Validation-{{YYYY-MM-DD-HHMMSS}}.md (meta-recursive sub-agent architectural validation report)",
+          "Meta_Recursive_SubAgent_Documentation_Standards-{{YYYY-MM-DD-HHMMSS}}.md (meta-recursive sub-agent documentation standards report)",
+          "Meta_Recursive_SubAgent_Testing_Validation-{{YYYY-MM-DD-HHMMSS}}.md (meta-recursive sub-agent testing validation report)",
+          "Meta_Recursive_SubAgent_Deployment_Integration-{{YYYY-MM-DD-HHMMSS}}.md (meta-recursive sub-agent deployment integration report)",
+          "SubAgent_Usage_Guide-{{YYYY-MM-DD-HHMMSS}}.md (sub-agent usage guide and next steps)"
+        ],
+        "recommended_action": "consolidate/remove - exceeds limit"
+      },
+      {
+        "file": "sub-agents/sub-agents-management-prompt.yaml",
+        "current_outputs": 9,
+        "output_list": [
+          "Meta_Recursive_SubAgent_Management_Report-{{YYYY-MM-DD-HHMMSS}}.md (comprehensive meta-recursive sub-agent management report)",
+          "Existing_SubAgent_Ecosystem_Management_Analysis-{{YYYY-MM-DD-HHMMSS}}.md (existing sub-agent ecosystem management analysis report)",
+          "Meta_Recursive_SubAgent_Lifecycle_Management-{{YYYY-MM-DD-HHMMSS}}.md (meta-recursive sub-agent lifecycle management report)",
+          "Meta_Recursive_SubAgent_Quality_Management-{{YYYY-MM-DD-HHMMSS}}.md (meta-recursive sub-agent quality management report)",
+          "Meta_Recursive_SubAgent_Architectural_Management-{{YYYY-MM-DD-HHMMSS}}.md (meta-recursive sub-agent architectural management report)",
+          "Meta_Recursive_SubAgent_Documentation_Management-{{YYYY-MM-DD-HHMMSS}}.md (meta-recursive sub-agent documentation management report)",
+          "Meta_Recursive_SubAgent_Testing_Management-{{YYYY-MM-DD-HHMMSS}}.md (meta-recursive sub-agent testing management report)",
+          "Meta_Recursive_SubAgent_Deployment_Management-{{YYYY-MM-DD-HHMMSS}}.md (meta-recursive sub-agent deployment management report)",
+          "SubAgent_Management_Next_Steps-{{YYYY-MM-DD-HHMMSS}}.md (sub-agent management next steps and guidance)"
+        ],
+        "recommended_action": "consolidate/remove - exceeds limit"
+      },
+      {
+        "file": "sub-agents/sub-agents-review-prompt.yaml",
+        "current_outputs": 9,
+        "output_list": [
+          "Meta_Recursive_SubAgent_Review_Report-{{YYYY-MM-DD-HHMMSS}}.md (comprehensive meta-recursive sub-agent review report)",
+          "Existing_SubAgent_Ecosystem_Review_Analysis-{{YYYY-MM-DD-HHMMSS}}.md (existing sub-agent ecosystem review analysis report)",
+          "Meta_Recursive_SubAgent_Structure_Review-{{YYYY-MM-DD-HHMMSS}}.md (meta-recursive sub-agent structure review report)",
+          "Meta_Recursive_SubAgent_Quality_Review-{{YYYY-MM-DD-HHMMSS}}.md (meta-recursive sub-agent quality review report)",
+          "Meta_Recursive_SubAgent_Architectural_Review-{{YYYY-MM-DD-HHMMSS}}.md (meta-recursive sub-agent architectural review report)",
+          "Meta_Recursive_SubAgent_Documentation_Review-{{YYYY-MM-DD-HHMMSS}}.md (meta-recursive sub-agent documentation review report)",
+          "Meta_Recursive_SubAgent_Testing_Review-{{YYYY-MM-DD-HHMMSS}}.md (meta-recursive sub-agent testing review report)",
+          "Meta_Recursive_SubAgent_Deployment_Review-{{YYYY-MM-DD-HHMMSS}}.md (meta-recursive sub-agent deployment review report)",
+          "SubAgent_Improvement_Recommendations-{{YYYY-MM-DD-HHMMSS}}.md (sub-agent improvement recommendations and next steps)"
+        ],
+        "recommended_action": "consolidate/remove - exceeds limit"
+      },
+      {
+        "file": "webui/python-code-framework-implement-prompt.yaml",
+        "current_outputs": 9,
+        "output_list": [
+          "Python_Implementation_Complete-{{YYYY-MM-DD-HHMMSS}}.ipynb (all Python code implemented)",
+          "Python_Component_Inventory-{{YYYY-MM-DD-HHMMSS}}.ipynb (all Python components)",
+          "Code_Quality_Report-{{YYYY-MM-DD-HHMMSS}}.ipynb (SOLID/DRY/KISS validation)",
+          "Service_Layer_Report-{{YYYY-MM-DD-HHMMSS}}.ipynb (service implementation)",
+          "Data_Layer_Implementation-{{YYYY-MM-DD-HHMMSS}}.ipynb (data layer functionality)",
+          "Security_Implementation-{{YYYY-MM-DD-HHMMSS}}.ipynb (security measures)",
+          "Performance_Validation-{{YYYY-MM-DD-HHMMSS}}.ipynb (performance results)",
+          "API_Contracts_Met-{{YYYY-MM-DD-HHMMSS}}.ipynb (API compliance)",
+          "Zero_Test_Code_Cert-{{YYYY-MM-DD-HHMMSS}}.ipynb (no tests created)"
+        ],
+        "recommended_action": "consolidate/remove - exceeds limit"
+      },
+      {
+        "file": "code/code-deployment-planning-prompt.yaml",
+        "current_outputs": 8,
+        "output_list": [
+          "Deployment_Planning-{{YYYY-MM-DD-HHMMSS}}.ipynb (master planning document)",
+          "System_Analysis-{{YYYY-MM-DD-HHMMSS}}.ipynb (component inventory and dependencies)",
+          "Infrastructure_Requirements-{{YYYY-MM-DD-HHMMSS}}.ipynb (resource and capacity planning)",
+          "Deployment_Strategy-{{YYYY-MM-DD-HHMMSS}}.ipynb (strategy selection and implementation)",
+          "Risk_Assessment-{{YYYY-MM-DD-HHMMSS}}.ipynb (risk analysis and mitigation plans)",
+          "Security_Compliance-{{YYYY-MM-DD-HHMMSS}}.ipynb (security and compliance requirements)",
+          "Monitoring_Observability-{{YYYY-MM-DD-HHMMSS}}.ipynb (monitoring and alerting plans)",
+          "CICD_Pipeline-{{YYYY-MM-DD-HHMMSS}}.ipynb (automation and pipeline architecture)"
+        ],
+        "recommended_action": "consolidate/remove - exceeds limit"
+      },
+      {
+        "file": "code/code-feature-implement-prompt.yaml",
+        "current_outputs": 8,
+        "output_list": [
+          "Feature_Implementation_Log-{{YYYY-MM-DD-HHMMSS}}.ipynb (comprehensive implementation documentation)",
+          "Code_Quality_Report-{{YYYY-MM-DD-HHMMSS}}.ipynb (quality validation results)",
+          "Integration_Validation-{{YYYY-MM-DD-HHMMSS}}.ipynb (integration testing and validation)",
+          "Security_Implementation-{{YYYY-MM-DD-HHMMSS}}.ipynb (security measures implementation)",
+          "Performance_Validation-{{YYYY-MM-DD-HHMMSS}}.ipynb (performance testing and optimization)",
+          "Cross_Cutting_Implementation-{{YYYY-MM-DD-HHMMSS}}.ipynb (cross-cutting concerns implementation)",
+          "SOLID_Compliance_Validation-{{YYYY-MM-DD-HHMMSS}}.ipynb (SOLID/DRY/KISS compliance check)",
+          "Production_Readiness_Report-{{YYYY-MM-DD-HHMMSS}}.ipynb (production readiness validation)"
+        ],
+        "recommended_action": "consolidate/remove - exceeds limit"
+      },
+      {
+        "file": "code/code-feature-planning-prompt.yaml",
+        "current_outputs": 8,
+        "output_list": [
+          "Feature_Planning-{{YYYY-MM-DD-HHMMSS}}.ipynb (comprehensive implementation plan)",
+          "Task_Breakdown-{{YYYY-MM-DD-HHMMSS}}.ipynb (detailed task breakdown with dependencies)",
+          "Reuse_Analysis-{{YYYY-MM-DD-HHMMSS}}.ipynb (existing code reuse opportunities)",
+          "Integration_Planning-{{YYYY-MM-DD-HHMMSS}}.ipynb (integration strategies and planning)",
+          "Quality_Gates_Planning-{{YYYY-MM-DD-HHMMSS}}.ipynb (validation workflow and quality gates)",
+          "Risk_Assessment_Planning-{{YYYY-MM-DD-HHMMSS}}.ipynb (risk analysis and mitigation strategies)",
+          "Observability_Planning-{{YYYY-MM-DD-HHMMSS}}.ipynb (debug logging and monitoring plan)",
+          "Acceptance_Criteria-{{YYYY-MM-DD-HHMMSS}}.ipynb (acceptance criteria and success metrics)"
+        ],
+        "recommended_action": "consolidate/remove - exceeds limit"
+      },
+      {
+        "file": "code/code-gap-analysis-prompt.yaml",
+        "current_outputs": 8,
+        "output_list": [
+          "Complete_Gap_Inventory-{{YYYY-MM-DD-HHMMSS}}.ipynb (all gaps cataloged with priorities)",
+          "Functional_Gap_Analysis-{{YYYY-MM-DD-HHMMSS}}.ipynb (feature gaps and missing implementations)",
+          "Technical_Gap_Analysis-{{YYYY-MM-DD-HHMMSS}}.ipynb (quality gaps and technical debt)",
+          "Security_Gap_Assessment-{{YYYY-MM-DD-HHMMSS}}.ipynb (vulnerabilities and security gaps)",
+          "Performance_Gap_Report-{{YYYY-MM-DD-HHMMSS}}.ipynb (optimization opportunities)",
+          "Logging_Gap_Analysis-{{YYYY-MM-DD-HHMMSS}}.ipynb (observability and logging gaps)",
+          "Remediation_Roadmap-{{YYYY-MM-DD-HHMMSS}}.ipynb (prioritized action plan)",
+          "Executive_Summary-{{YYYY-MM-DD-HHMMSS}}.ipynb (key findings and recommendations)"
+        ],
+        "recommended_action": "consolidate/remove - exceeds limit"
+      },
+      {
+        "file": "code/code-refactor-prompt.yaml",
+        "current_outputs": 8,
+        "output_list": [
+          "Refactoring_Complete-{{YYYY-MM-DD-HHMMSS}}.ipynb (all changes documented)",
+          "Quality_Metrics_Report-{{YYYY-MM-DD-HHMMSS}}.ipynb (before/after comparison)",
+          "Change_History-{{YYYY-MM-DD-HHMMSS}}.ipynb (systematic changes log)",
+          "Performance_Validation-{{YYYY-MM-DD-HHMMSS}}.ipynb (benchmark results)",
+          "Security_Improvements-{{YYYY-MM-DD-HHMMSS}}.ipynb (hardening applied)",
+          "Cleanup_Certificate-{{YYYY-MM-DD-HHMMSS}}.ipynb (no transient files)",
+          "Change_Ready_For_Review-{{YYYY-MM-DD-HHMMSS}}.ipynb (review preparation)",
+          "Zero_Test_Code_Cert-{{YYYY-MM-DD-HHMMSS}}.ipynb (no tests created)"
+        ],
+        "recommended_action": "consolidate/remove - exceeds limit"
+      },
+      {
+        "file": "code/code-remediation-prompt.yaml",
+        "current_outputs": 8,
+        "output_list": [
+          "Remediation_Complete-{{YYYY-MM-DD-HHMMSS}}.ipynb (all fixes documented)",
+          "Security_Fixes_Applied-{{YYYY-MM-DD-HHMMSS}}.ipynb (vulnerabilities resolved)",
+          "Performance_Improvements-{{YYYY-MM-DD-HHMMSS}}.ipynb (optimizations done)",
+          "Debug_Logging_Added-{{YYYY-MM-DD-HHMMSS}}.ipynb (comprehensive logging)",
+          "Deployment_History-{{YYYY-MM-DD-HHMMSS}}.ipynb (all deployments logged)",
+          "Log_Validation_Report-{{YYYY-MM-DD-HHMMSS}}.ipynb (all logs verified)",
+          "Operational_Certificate-{{YYYY-MM-DD-HHMMSS}}.ipynb (app fully functional)",
+          "Clean_Repository-{{YYYY-MM-DD-HHMMSS}}.ipynb (no transient files)"
+        ],
+        "recommended_action": "consolidate/remove - exceeds limit"
+      },
+      {
+        "file": "deployments/deployments-content-review-prompt.yaml",
+        "current_outputs": 8,
+        "output_list": [
+          "Content_Review_Report-{{YYYY-MM-DD-HHMMSS}}.md (comprehensive review findings)",
+          "Gap_Analysis_Report-{{YYYY-MM-DD-HHMMSS}}.md (detailed gap identification)",
+          "Structure_Compliance_Validation-{{YYYY-MM-DD-HHMMSS}}.md (structure validation results)",
+          "Content_Completeness_Analysis-{{YYYY-MM-DD-HHMMSS}}.md (completeness assessment)",
+          "Alignment_Validation_Report-{{YYYY-MM-DD-HHMMSS}}.md (alignment verification)",
+          "Quality_Assurance_Assessment-{{YYYY-MM-DD-HHMMSS}}.md (quality validation results)",
+          "Best_Practices_Compliance_Report-{{YYYY-MM-DD-HHMMSS}}.md (best practices validation)",
+          "Improvement_Action_Plan-{{YYYY-MM-DD-HHMMSS}}.md (recommended improvements and next steps)"
+        ],
+        "recommended_action": "consolidate/remove - exceeds limit"
+      },
+      {
+        "file": "fastapi/python-code-framework-planning-prompt.yaml",
+        "current_outputs": 8,
+        "output_list": [
+          "Python_Planning_Complete-{{YYYY-MM-DD-HHMMSS}}.ipynb (master planning document)",
+          "Python_Requirements_Analysis-{{YYYY-MM-DD-HHMMSS}}.ipynb (project requirements breakdown)",
+          "Python_Task_Breakdown-{{YYYY-MM-DD-HHMMSS}}.ipynb (detailed task decomposition)",
+          "Resource_Timeline_Plan-{{YYYY-MM-DD-HHMMSS}}.ipynb (resource and timeline estimates)",
+          "Risk_Mitigation_Strategy-{{YYYY-MM-DD-HHMMSS}}.ipynb (risk analysis and mitigation)",
+          "Quality_Validation_Plan-{{YYYY-MM-DD-HHMMSS}}.ipynb (quality gates and validation)",
+          "Implementation_Roadmap-{{YYYY-MM-DD-HHMMSS}}.ipynb (implementation roadmap and milestones)",
+          "Code_Reuse_Analysis-{{YYYY-MM-DD-HHMMSS}}.ipynb (existing codebase integration analysis)"
+        ],
+        "recommended_action": "consolidate/remove - exceeds limit"
+      },
+      {
+        "file": "fastapi/python-code-gap-analysis-prompt.yaml",
+        "current_outputs": 8,
+        "output_list": [
+          "Python_Gap_Overview-{{YYYY-MM-DD-HHMMSS}}.ipynb (analysis methodology and scope)",
+          "Best_Practices_Gaps-{{YYYY-MM-DD-HHMMSS}}.ipynb (PEP compliance and idiom gaps)",
+          "Type_Safety_Gaps-{{YYYY-MM-DD-HHMMSS}}.ipynb (type annotation coverage issues)",
+          "Testing_Coverage_Gaps-{{YYYY-MM-DD-HHMMSS}}.ipynb (test strategy deficiencies)",
+          "Security_Analysis_Gaps-{{YYYY-MM-DD-HHMMSS}}.ipynb (security vulnerabilities)",
+          "Performance_Optimization_Gaps-{{YYYY-MM-DD-HHMMSS}}.ipynb (performance bottlenecks)",
+          "Modernization_Roadmap-{{YYYY-MM-DD-HHMMSS}}.ipynb (Python 3 migration plan)",
+          "Executive_Summary-{{YYYY-MM-DD-HHMMSS}}.ipynb (key findings and recommendations)"
+        ],
+        "recommended_action": "consolidate/remove - exceeds limit"
+      },
+      {
+        "file": "fastapi/python-code-lint-and-quality-check-prompt.yaml",
+        "current_outputs": 8,
+        "output_list": [
+          "Python_Quality_Report-{{YYYY-MM-DD-HHMMSS}}.ipynb (complete assessment)",
+          "Style_Compliance-{{YYYY-MM-DD-HHMMSS}}.ipynb (PEP 8 and formatting)",
+          "Type_Safety_Report-{{YYYY-MM-DD-HHMMSS}}.ipynb (type validation)",
+          "Security_Scan_Results-{{YYYY-MM-DD-HHMMSS}}.ipynb (vulnerability report)",
+          "Test_Coverage_Analysis-{{YYYY-MM-DD-HHMMSS}}.ipynb (test metrics)",
+          "Quality_Fixes_Applied-{{YYYY-MM-DD-HHMMSS}}.ipynb (safe fixes)",
+          "Complex_Issues_Flagged-{{YYYY-MM-DD-HHMMSS}}.ipynb (remediation needs)",
+          "Quality_Summary-{{YYYY-MM-DD-HHMMSS}}.ipynb (executive summary)"
+        ],
+        "recommended_action": "consolidate/remove - exceeds limit"
+      },
+      {
+        "file": "fastapi/python-code-refactor-prompt.yaml",
+        "current_outputs": 8,
+        "output_list": [
+          "Python_Refactoring_Plan-{{YYYY-MM-DD-HHMMSS}}.ipynb (refactoring strategy)",
+          "SOLID_Principles_Applied-{{YYYY-MM-DD-HHMMSS}}.ipynb (SOLID transformations)",
+          "Design_Patterns_Implemented-{{YYYY-MM-DD-HHMMSS}}.ipynb (pattern applications)",
+          "Code_Modernization-{{YYYY-MM-DD-HHMMSS}}.ipynb (Python 3.11+ updates)",
+          "Type_Annotations_Added-{{YYYY-MM-DD-HHMMSS}}.ipynb (type safety improvements)",
+          "Performance_Optimizations-{{YYYY-MM-DD-HHMMSS}}.ipynb (performance enhancements)",
+          "Quality_Validation-{{YYYY-MM-DD-HHMMSS}}.ipynb (quality verification)",
+          "Refactoring_Summary-{{YYYY-MM-DD-HHMMSS}}.ipynb (executive summary)"
+        ],
+        "recommended_action": "consolidate/remove - exceeds limit"
+      },
+      {
+        "file": "fastapi/python-code-review-prompt.yaml",
+        "current_outputs": 8,
+        "output_list": [
+          "Code_Review_Analysis-{{YYYY-MM-DD-HHMMSS}}.ipynb (comprehensive analysis with interactive elements)",
+          "Architecture_Diagrams-{{YYYY-MM-DD-HHMMSS}}.md (complete architectural visualization set)",
+          "Interface_Contracts-{{YYYY-MM-DD-HHMMSS}}.md (all significant interfaces documented)",
+          "Security_Assessment-{{YYYY-MM-DD-HHMMSS}}.md (vulnerability analysis and recommendations)",
+          "Performance_Report-{{YYYY-MM-DD-HHMMSS}}.md (bottleneck analysis and optimization guide)",
+          "Technical_Debt_Inventory-{{YYYY-MM-DD-HHMMSS}}.md (debt analysis and refactoring roadmap)",
+          "Best_Practices_Report-{{YYYY-MM-DD-HHMMSS}}.md (language-specific compliance analysis)",
+          "Executive_Summary-{{YYYY-MM-DD-HHMMSS}}.pdf (high-level findings for stakeholders)"
+        ],
+        "recommended_action": "consolidate/remove - exceeds limit"
+      },
+      {
+        "file": "node/nodejs-lint-quality-check-prompt.yaml",
+        "current_outputs": 8,
+        "output_list": [
+          "NodeJS_Quality_Report-{{YYYY-MM-DD-HHMMSS}}.ipynb (complete assessment)",
+          "Style_Compliance-{{YYYY-MM-DD-HHMMSS}}.ipynb (ESLint and formatting)",
+          "Type_Safety_Report-{{YYYY-MM-DD-HHMMSS}}.ipynb (TypeScript validation)",
+          "Security_Scan_Results-{{YYYY-MM-DD-HHMMSS}}.ipynb (vulnerability report)",
+          "Test_Coverage_Analysis-{{YYYY-MM-DD-HHMMSS}}.ipynb (test metrics)",
+          "Quality_Fixes_Applied-{{YYYY-MM-DD-HHMMSS}}.ipynb (safe fixes)",
+          "Complex_Issues_Flagged-{{YYYY-MM-DD-HHMMSS}}.ipynb (remediation needs)",
+          "Quality_Summary-{{YYYY-MM-DD-HHMMSS}}.ipynb (executive summary)"
+        ],
+        "recommended_action": "consolidate/remove - exceeds limit"
+      },
+      {
+        "file": "node/nodejs-refactor-prompt.yaml",
+        "current_outputs": 8,
+        "output_list": [
+          "NodeJS_Refactoring_Report-{{YYYY-MM-DD-HHMMSS}}.ipynb (complete transformation documentation)",
+          "SOLID_Principles_Applied-{{YYYY-MM-DD-HHMMSS}}.ipynb (SOLID transformations)",
+          "Design_Patterns_Implemented-{{YYYY-MM-DD-HHMMSS}}.ipynb (pattern implementations)",
+          "Code_Modernization_Applied-{{YYYY-MM-DD-HHMMSS}}.ipynb (Node.js modernization)",
+          "Type_Annotations_Added-{{YYYY-MM-DD-HHMMSS}}.ipynb (TypeScript enhancements)",
+          "Performance_Optimizations-{{YYYY-MM-DD-HHMMSS}}.ipynb (performance improvements)",
+          "Architecture_Improvements-{{YYYY-MM-DD-HHMMSS}}.ipynb (structural changes)",
+          "Refactoring_Summary-{{YYYY-MM-DD-HHMMSS}}.ipynb (executive summary)"
+        ],
+        "recommended_action": "consolidate/remove - exceeds limit"
+      },
+      {
+        "file": "plugin/code-plugin-framework-planning-prompt.yaml",
+        "current_outputs": 8,
+        "output_list": [
+          "Plugin_Planning_Complete-{{YYYY-MM-DD-HHMMSS}}.ipynb (master planning document)",
+          "Plugin_Requirements_Analysis-{{YYYY-MM-DD-HHMMSS}}.ipynb (framework requirements breakdown)",
+          "Plugin_Task_Breakdown-{{YYYY-MM-DD-HHMMSS}}.ipynb (detailed task decomposition)",
+          "Resource_Timeline_Plan-{{YYYY-MM-DD-HHMMSS}}.ipynb (resource and timeline estimates)",
+          "Risk_Mitigation_Strategy-{{YYYY-MM-DD-HHMMSS}}.ipynb (risk analysis and mitigation)",
+          "Quality_Validation_Plan-{{YYYY-MM-DD-HHMMSS}}.ipynb (quality gates and validation)",
+          "Implementation_Roadmap-{{YYYY-MM-DD-HHMMSS}}.ipynb (implementation roadmap and milestones)",
+          "Code_Reuse_Analysis-{{YYYY-MM-DD-HHMMSS}}.ipynb (existing codebase integration analysis)"
+        ],
+        "recommended_action": "consolidate/remove - exceeds limit"
+      },
+      {
+        "file": "plugin/code-plugin-gap-analysis-prompt.yaml",
+        "current_outputs": 8,
+        "output_list": [
+          "Plugin_Gap_Overview-{{YYYY-MM-DD-HHMMSS}}.ipynb (analysis methodology and scope)",
+          "Interface_Contract_Gaps-{{YYYY-MM-DD-HHMMSS}}.ipynb (interface and contract deficiencies)",
+          "Isolation_Security_Gaps-{{YYYY-MM-DD-HHMMSS}}.ipynb (security and isolation issues)",
+          "Registry_HotLoading_Gaps-{{YYYY-MM-DD-HHMMSS}}.ipynb (registry and runtime gaps)",
+          "Extension_Modularity_Gaps-{{YYYY-MM-DD-HHMMSS}}.ipynb (extension point deficiencies)",
+          "Performance_Lifecycle_Gaps-{{YYYY-MM-DD-HHMMSS}}.ipynb (performance and lifecycle issues)",
+          "Transformation_Roadmap-{{YYYY-MM-DD-HHMMSS}}.ipynb (prioritized remediation plan)",
+          "Executive_Summary-{{YYYY-MM-DD-HHMMSS}}.ipynb (key findings and recommendations)"
+        ],
+        "recommended_action": "consolidate/remove - exceeds limit"
+      },
+      {
+        "file": "plugin/code-plugin-lint-and-quality-check-prompt.yaml",
+        "current_outputs": 8,
+        "output_list": [
+          "Plugin_Quality_Report-{{YYYY-MM-DD-HHMMSS}}.ipynb (complete assessment)",
+          "Interface_Validation-{{YYYY-MM-DD-HHMMSS}}.ipynb (interface checks)",
+          "Security_Validation-{{YYYY-MM-DD-HHMMSS}}.ipynb (security assessment)",
+          "Registry_Compatibility-{{YYYY-MM-DD-HHMMSS}}.ipynb (registry validation)",
+          "Lifecycle_Validation-{{YYYY-MM-DD-HHMMSS}}.ipynb (lifecycle checks)",
+          "Quality_Fixes_Applied-{{YYYY-MM-DD-HHMMSS}}.ipynb (safe fixes)",
+          "Complex_Issues_Flagged-{{YYYY-MM-DD-HHMMSS}}.ipynb (remediation needs)",
+          "Quality_Summary-{{YYYY-MM-DD-HHMMSS}}.ipynb (executive summary)"
+        ],
+        "recommended_action": "consolidate/remove - exceeds limit"
+      },
+      {
+        "file": "plugin/code-plugin-quality-analysis-prompt.yaml",
+        "current_outputs": 8,
+        "output_list": [
+          "Plugin_Quality_Overview-{{YYYY-MM-DD-HHMMSS}}.ipynb (executive summary)",
+          "Plugin_Component_Inventory-{{YYYY-MM-DD-HHMMSS}}.ipynb (component catalog)",
+          "Architecture_Principles_Analysis-{{YYYY-MM-DD-HHMMSS}}.ipynb (SOLID assessment)",
+          "Design_Pattern_Analysis-{{YYYY-MM-DD-HHMMSS}}.ipynb (pattern evaluation)",
+          "Anti_Pattern_Detection-{{YYYY-MM-DD-HHMMSS}}.ipynb (anti-pattern findings)",
+          "Security_Quality_Assessment-{{YYYY-MM-DD-HHMMSS}}.ipynb (security evaluation)",
+          "Performance_Quality_Metrics-{{YYYY-MM-DD-HHMMSS}}.ipynb (performance analysis)",
+          "Quality_Recommendations-{{YYYY-MM-DD-HHMMSS}}.ipynb (improvement roadmap)"
+        ],
+        "recommended_action": "consolidate/remove - exceeds limit"
+      },
+      {
+        "file": "plugin/code-plugin-refactor-prompt.yaml",
+        "current_outputs": 8,
+        "output_list": [
+          "Plugin_Refactoring_Plan-{{YYYY-MM-DD-HHMMSS}}.ipynb (transformation strategy)",
+          "Interface_Extraction-{{YYYY-MM-DD-HHMMSS}}.ipynb (interface definitions)",
+          "Registry_Implementation-{{YYYY-MM-DD-HHMMSS}}.ipynb (registry integration)",
+          "Hot_Loading_Setup-{{YYYY-MM-DD-HHMMSS}}.ipynb (runtime management)",
+          "Isolation_Implementation-{{YYYY-MM-DD-HHMMSS}}.ipynb (security boundaries)",
+          "Extension_Points-{{YYYY-MM-DD-HHMMSS}}.ipynb (hook systems)",
+          "Validation_Results-{{YYYY-MM-DD-HHMMSS}}.ipynb (quality verification)",
+          "Refactoring_Summary-{{YYYY-MM-DD-HHMMSS}}.ipynb (executive summary)"
+        ],
+        "recommended_action": "consolidate/remove - exceeds limit"
+      },
+      {
+        "file": "python/python-code-framework-planning-prompt.yaml",
+        "current_outputs": 8,
+        "output_list": [
+          "Python_Planning_Complete-{{YYYY-MM-DD-HHMMSS}}.ipynb (master planning document)",
+          "Python_Requirements_Analysis-{{YYYY-MM-DD-HHMMSS}}.ipynb (project requirements breakdown)",
+          "Python_Task_Breakdown-{{YYYY-MM-DD-HHMMSS}}.ipynb (detailed task decomposition)",
+          "Resource_Timeline_Plan-{{YYYY-MM-DD-HHMMSS}}.ipynb (resource and timeline estimates)",
+          "Risk_Mitigation_Strategy-{{YYYY-MM-DD-HHMMSS}}.ipynb (risk analysis and mitigation)",
+          "Quality_Validation_Plan-{{YYYY-MM-DD-HHMMSS}}.ipynb (quality gates and validation)",
+          "Implementation_Roadmap-{{YYYY-MM-DD-HHMMSS}}.ipynb (implementation roadmap and milestones)",
+          "Code_Reuse_Analysis-{{YYYY-MM-DD-HHMMSS}}.ipynb (existing codebase integration analysis)"
+        ],
+        "recommended_action": "consolidate/remove - exceeds limit"
+      },
+      {
+        "file": "python/python-code-gap-analysis-prompt.yaml",
+        "current_outputs": 8,
+        "output_list": [
+          "Python_Gap_Overview-{{YYYY-MM-DD-HHMMSS}}.ipynb (analysis methodology and scope)",
+          "Best_Practices_Gaps-{{YYYY-MM-DD-HHMMSS}}.ipynb (PEP compliance and idiom gaps)",
+          "Type_Safety_Gaps-{{YYYY-MM-DD-HHMMSS}}.ipynb (type annotation coverage issues)",
+          "Testing_Coverage_Gaps-{{YYYY-MM-DD-HHMMSS}}.ipynb (test strategy deficiencies)",
+          "Security_Analysis_Gaps-{{YYYY-MM-DD-HHMMSS}}.ipynb (security vulnerabilities)",
+          "Performance_Optimization_Gaps-{{YYYY-MM-DD-HHMMSS}}.ipynb (performance bottlenecks)",
+          "Modernization_Roadmap-{{YYYY-MM-DD-HHMMSS}}.ipynb (Python 3 migration plan)",
+          "Executive_Summary-{{YYYY-MM-DD-HHMMSS}}.ipynb (key findings and recommendations)"
+        ],
+        "recommended_action": "consolidate/remove - exceeds limit"
+      },
+      {
+        "file": "python/python-code-lint-and-quality-check-prompt.yaml",
+        "current_outputs": 8,
+        "output_list": [
+          "Python_Quality_Report-{{YYYY-MM-DD-HHMMSS}}.ipynb (complete assessment)",
+          "Style_Compliance-{{YYYY-MM-DD-HHMMSS}}.ipynb (PEP 8 and formatting)",
+          "Type_Safety_Report-{{YYYY-MM-DD-HHMMSS}}.ipynb (type validation)",
+          "Security_Scan_Results-{{YYYY-MM-DD-HHMMSS}}.ipynb (vulnerability report)",
+          "Test_Coverage_Analysis-{{YYYY-MM-DD-HHMMSS}}.ipynb (test metrics)",
+          "Quality_Fixes_Applied-{{YYYY-MM-DD-HHMMSS}}.ipynb (safe fixes)",
+          "Complex_Issues_Flagged-{{YYYY-MM-DD-HHMMSS}}.ipynb (remediation needs)",
+          "Quality_Summary-{{YYYY-MM-DD-HHMMSS}}.ipynb (executive summary)"
+        ],
+        "recommended_action": "consolidate/remove - exceeds limit"
+      },
+      {
+        "file": "python/python-code-refactor-prompt.yaml",
+        "current_outputs": 8,
+        "output_list": [
+          "Python_Refactoring_Plan-{{YYYY-MM-DD-HHMMSS}}.ipynb (refactoring strategy)",
+          "SOLID_Principles_Applied-{{YYYY-MM-DD-HHMMSS}}.ipynb (SOLID transformations)",
+          "Design_Patterns_Implemented-{{YYYY-MM-DD-HHMMSS}}.ipynb (pattern applications)",
+          "Code_Modernization-{{YYYY-MM-DD-HHMMSS}}.ipynb (Python 3.11+ updates)",
+          "Type_Annotations_Added-{{YYYY-MM-DD-HHMMSS}}.ipynb (type safety improvements)",
+          "Performance_Optimizations-{{YYYY-MM-DD-HHMMSS}}.ipynb (performance enhancements)",
+          "Quality_Validation-{{YYYY-MM-DD-HHMMSS}}.ipynb (quality verification)",
+          "Refactoring_Summary-{{YYYY-MM-DD-HHMMSS}}.ipynb (executive summary)"
+        ],
+        "recommended_action": "consolidate/remove - exceeds limit"
+      },
+      {
+        "file": "python/python-code-review-prompt.yaml",
+        "current_outputs": 8,
+        "output_list": [
+          "Code_Review_Analysis-{{YYYY-MM-DD-HHMMSS}}.ipynb (comprehensive analysis with interactive elements)",
+          "Architecture_Diagrams-{{YYYY-MM-DD-HHMMSS}}.md (complete architectural visualization set)",
+          "Interface_Contracts-{{YYYY-MM-DD-HHMMSS}}.md (all significant interfaces documented)",
+          "Security_Assessment-{{YYYY-MM-DD-HHMMSS}}.md (vulnerability analysis and recommendations)",
+          "Performance_Report-{{YYYY-MM-DD-HHMMSS}}.md (bottleneck analysis and optimization guide)",
+          "Technical_Debt_Inventory-{{YYYY-MM-DD-HHMMSS}}.md (debt analysis and refactoring roadmap)",
+          "Best_Practices_Report-{{YYYY-MM-DD-HHMMSS}}.md (language-specific compliance analysis)",
+          "Executive_Summary-{{YYYY-MM-DD-HHMMSS}}.pdf (high-level findings for stakeholders)"
+        ],
+        "recommended_action": "consolidate/remove - exceeds limit"
+      },
+      {
+        "file": "quality/quality-analyze-results-prompt.yaml",
+        "current_outputs": 8,
+        "output_list": [
+          "Quality_Analysis-{{YYYY-MM-DD-HHMMSS}}.ipynb (master analysis document)",
+          "Issue_Categorization-{{YYYY-MM-DD-HHMMSS}}.ipynb (comprehensive issue classification)",
+          "Remediation_Planning-{{YYYY-MM-DD-HHMMSS}}.ipynb (detailed remediation strategies)",
+          "File_Impact_Analysis-{{YYYY-MM-DD-HHMMSS}}.ipynb (file-level issue impact assessment)",
+          "Priority_Matrix-{{YYYY-MM-DD-HHMMSS}}.ipynb (issue prioritization and ranking)",
+          "Quality_Metrics-{{YYYY-MM-DD-HHMMSS}}.ipynb (quality measurement and trends)",
+          "Remediation_Estimates-{{YYYY-MM-DD-HHMMSS}}.ipynb (time and effort estimations)",
+          "Analysis_Summary-{{YYYY-MM-DD-HHMMSS}}.ipynb (executive summary and recommendations)"
+        ],
+        "recommended_action": "consolidate/remove - exceeds limit"
+      },
+      {
+        "file": "quality/quality-code-analysis-prompt.yaml",
+        "current_outputs": 8,
+        "output_list": [
+          "Code_Quality_Analysis-{{YYYY-MM-DD-HHMMSS}}.ipynb (master quality assessment document)",
+          "SOLID_Principles_Analysis-{{YYYY-MM-DD-HHMMSS}}.ipynb (SOLID compliance assessment)",
+          "Design_Patterns_Analysis-{{YYYY-MM-DD-HHMMSS}}.ipynb (pattern usage and implementation)",
+          "Anti_Patterns_Detection-{{YYYY-MM-DD-HHMMSS}}.ipynb (code smells and anti-patterns)",
+          "Security_Analysis-{{YYYY-MM-DD-HHMMSS}}.ipynb (security best practices assessment)",
+          "Performance_Analysis-{{YYYY-MM-DD-HHMMSS}}.ipynb (performance patterns and optimization)",
+          "Clean_Code_Assessment-{{YYYY-MM-DD-HHMMSS}}.ipynb (clean code principles evaluation)",
+          "Quality_Metrics_Report-{{YYYY-MM-DD-HHMMSS}}.ipynb (comprehensive metrics and scoring)"
+        ],
+        "recommended_action": "consolidate/remove - exceeds limit"
+      },
+      {
+        "file": "quality/quality-code-ast-analysis-prompt.yaml",
+        "current_outputs": 8,
+        "output_list": [
+          "AST_Analysis-{{YYYY-MM-DD-HHMMSS}}.ipynb (complete Abstract Syntax Tree analysis)",
+          "SAST_Security_Analysis-{{YYYY-MM-DD-HHMMSS}}.ipynb (Static Application Security Testing results)",
+          "Dependency_Flow_Analysis-{{YYYY-MM-DD-HHMMSS}}.ipynb (complete dependency and data flow mapping)",
+          "Control_Flow_Analysis-{{YYYY-MM-DD-HHMMSS}}.ipynb (control flow and execution path analysis)",
+          "Complexity_Analysis-{{YYYY-MM-DD-HHMMSS}}.ipynb (complexity metrics and measurement)",
+          "Pattern_Detection-{{YYYY-MM-DD-HHMMSS}}.ipynb (pattern and anti-pattern identification)",
+          "Security_Vulnerabilities-{{YYYY-MM-DD-HHMMSS}}.ipynb (complete security vulnerability assessment)",
+          "Compliance_Matrices-{{YYYY-MM-DD-HHMMSS}}.ipynb (compliance and standards validation)"
+        ],
+        "recommended_action": "consolidate/remove - exceeds limit"
+      },
+      {
+        "file": "quality/quality-code-review-prompt.yaml",
+        "current_outputs": 8,
+        "output_list": [
+          "Code_Review_Analysis-{{YYYY-MM-DD-HHMMSS}}.ipynb (comprehensive analysis with interactive elements)",
+          "Architecture_Diagrams-{{YYYY-MM-DD-HHMMSS}}.md (complete architectural visualization set)",
+          "Interface_Contracts-{{YYYY-MM-DD-HHMMSS}}.md (all significant interfaces documented)",
+          "Security_Assessment-{{YYYY-MM-DD-HHMMSS}}.md (vulnerability analysis and recommendations)",
+          "Performance_Report-{{YYYY-MM-DD-HHMMSS}}.md (bottleneck analysis and optimization guide)",
+          "Technical_Debt_Inventory-{{YYYY-MM-DD-HHMMSS}}.md (debt analysis and refactoring roadmap)",
+          "Best_Practices_Report-{{YYYY-MM-DD-HHMMSS}}.md (language-specific compliance analysis)",
+          "Executive_Summary-{{YYYY-MM-DD-HHMMSS}}.pdf (high-level findings for stakeholders)"
+        ],
+        "recommended_action": "consolidate/remove - exceeds limit"
+      },
+      {
+        "file": "quality/quality-fix-critical-prompt.yaml",
+        "current_outputs": 8,
+        "output_list": [
+          "Critical_Issues_Remediation-{{YYYY-MM-DD-HHMMSS}}.ipynb (comprehensive fix report)",
+          "Syntax_Errors_Fixed-{{YYYY-MM-DD-HHMMSS}}.ipynb (syntax resolution details)",
+          "Dependency_Conflicts_Resolved-{{YYYY-MM-DD-HHMMSS}}.ipynb (dependency fixes)",
+          "Configuration_Issues_Fixed-{{YYYY-MM-DD-HHMMSS}}.ipynb (configuration corrections)",
+          "Compilation_Validation_Report-{{YYYY-MM-DD-HHMMSS}}.ipynb (validation results)",
+          "Fix_Audit_Trail-{{YYYY-MM-DD-HHMMSS}}.md (detailed change history)",
+          "Remediation_Summary-{{YYYY-MM-DD-HHMMSS}}.json (structured fix report)",
+          "Production_Readiness_Certificate-{{YYYY-MM-DD-HHMMSS}}.md (certification status)"
+        ],
+        "recommended_action": "consolidate/remove - exceeds limit"
+      },
+      {
+        "file": "test/test-end-to-end-prompt.yaml",
+        "current_outputs": 8,
+        "output_list": [
+          "E2E_Test_Overview-{{YYYY-MM-DD-HHMMSS}}.ipynb (master test execution overview)",
+          "Service_Integration_Tests-{{YYYY-MM-DD-HHMMSS}}.ipynb (service integration validation)",
+          "Workflow_Validation_Tests-{{YYYY-MM-DD-HHMMSS}}.ipynb (complete workflow testing)",
+          "Performance_Benchmark_Tests-{{YYYY-MM-DD-HHMMSS}}.ipynb (performance analysis)",
+          "User_Journey_Tests-{{YYYY-MM-DD-HHMMSS}}.ipynb (user experience validation)",
+          "Data_Flow_Tests-{{YYYY-MM-DD-HHMMSS}}.ipynb (data consistency validation)",
+          "Resilience_Recovery_Tests-{{YYYY-MM-DD-HHMMSS}}.ipynb (failure recovery testing)",
+          "Security_Compliance_Tests-{{YYYY-MM-DD-HHMMSS}}.ipynb (security validation)"
+        ],
+        "recommended_action": "consolidate/remove - exceeds limit"
+      },
+      {
+        "file": "test/test-execution-prompt.yaml",
+        "current_outputs": 8,
+        "output_list": [
+          "Test_Execution_Summary-{{YYYY-MM-DD-HHMMSS}}.ipynb (comprehensive execution overview)",
+          "Automated_Test_Results-{{YYYY-MM-DD-HHMMSS}}.ipynb (automated testing results)",
+          "Manual_Test_Results-{{YYYY-MM-DD-HHMMSS}}.ipynb (manual testing validation)",
+          "Deviation_Analysis_Report-{{YYYY-MM-DD-HHMMSS}}.ipynb (deviation detection and analysis)",
+          "Performance_Analysis_Report-{{YYYY-MM-DD-HHMMSS}}.ipynb (performance evaluation)",
+          "Quality_Assessment_Report-{{YYYY-MM-DD-HHMMSS}}.ipynb (quality metrics and certification)",
+          "Risk_Assessment_Report-{{YYYY-MM-DD-HHMMSS}}.ipynb (risk analysis and mitigation)",
+          "Executive_Summary_Report-{{YYYY-MM-DD-HHMMSS}}.ipynb (management summary and recommendations)"
+        ],
+        "recommended_action": "consolidate/remove - exceeds limit"
+      },
+      {
+        "file": "test/test-live-api-prompt.yaml",
+        "current_outputs": 8,
+        "output_list": [
+          "Live_API_Test_Overview-{{YYYY-MM-DD-HHMMSS}}.ipynb (master API testing overview)",
+          "API_Endpoint_Tests-{{YYYY-MM-DD-HHMMSS}}.ipynb (individual endpoint validation)",
+          "API_Workflow_Tests-{{YYYY-MM-DD-HHMMSS}}.ipynb (end-to-end API workflow testing)",
+          "API_Performance_Tests-{{YYYY-MM-DD-HHMMSS}}.ipynb (performance analysis)",
+          "API_Security_Tests-{{YYYY-MM-DD-HHMMSS}}.ipynb (security validation)",
+          "API_Integration_Tests-{{YYYY-MM-DD-HHMMSS}}.ipynb (service integration validation)",
+          "API_Error_Handling_Tests-{{YYYY-MM-DD-HHMMSS}}.ipynb (error scenario testing)",
+          "API_Data_Consistency_Tests-{{YYYY-MM-DD-HHMMSS}}.ipynb (data validation)"
+        ],
+        "recommended_action": "consolidate/remove - exceeds limit"
+      },
+      {
+        "file": "test/test-planning-prompt.yaml",
+        "current_outputs": 8,
+        "output_list": [
+          "Test_Planning_Overview-{{YYYY-MM-DD-HHMMSS}}.ipynb (comprehensive planning overview)",
+          "Test_Strategy_Framework-{{YYYY-MM-DD-HHMMSS}}.ipynb (test strategy and methodology)",
+          "Test_Coverage_Analysis-{{YYYY-MM-DD-HHMMSS}}.ipynb (coverage requirements and matrices)",
+          "Risk_Assessment_Planning-{{YYYY-MM-DD-HHMMSS}}.ipynb (risk analysis and prioritization)",
+          "Test_Scenario_Design-{{YYYY-MM-DD-HHMMSS}}.ipynb (comprehensive scenario specifications)",
+          "Automation_Strategy_Plan-{{YYYY-MM-DD-HHMMSS}}.ipynb (automation planning and roadmap)",
+          "Environment_Infrastructure_Plan-{{YYYY-MM-DD-HHMMSS}}.ipynb (environment and infrastructure)",
+          "Resource_Timeline_Plan-{{YYYY-MM-DD-HHMMSS}}.ipynb (resource planning and scheduling)"
+        ],
+        "recommended_action": "consolidate/remove - exceeds limit"
+      },
+      {
+        "file": "test/test-prerequisites-prompt.yaml",
+        "current_outputs": 8,
+        "output_list": [
+          "Prerequisites_Validation_Overview-{{YYYY-MM-DD-HHMMSS}}.ipynb (master validation overview)",
+          "Service_Dependencies_Validation-{{YYYY-MM-DD-HHMMSS}}.ipynb (service dependency verification)",
+          "Infrastructure_Requirements_Validation-{{YYYY-MM-DD-HHMMSS}}.ipynb (infrastructure readiness)",
+          "Test_Data_Preparation_Validation-{{YYYY-MM-DD-HHMMSS}}.ipynb (test data setup verification)",
+          "Security_Configuration_Validation-{{YYYY-MM-DD-HHMMSS}}.ipynb (security setup verification)",
+          "Network_Connectivity_Validation-{{YYYY-MM-DD-HHMMSS}}.ipynb (network readiness testing)",
+          "Monitoring_Setup_Validation-{{YYYY-MM-DD-HHMMSS}}.ipynb (observability configuration)",
+          "Environment_Readiness_Certification-{{YYYY-MM-DD-HHMMSS}}.ipynb (final readiness assessment)"
+        ],
+        "recommended_action": "consolidate/remove - exceeds limit"
+      },
+      {
+        "file": "test/test-protocol-end-to-end-prompt.yaml",
+        "current_outputs": 8,
+        "output_list": [
+          "End_to_End_Testing_Overview-{{YYYY-MM-DD-HHMMSS}}.ipynb (comprehensive E2E testing overview)",
+          "Multi_Service_Integration_Tests-{{YYYY-MM-DD-HHMMSS}}.ipynb (service integration validation)",
+          "User_Journey_Workflow_Tests-{{YYYY-MM-DD-HHMMSS}}.ipynb (complete user journey testing)",
+          "Data_Flow_Validation_Tests-{{YYYY-MM-DD-HHMMSS}}.ipynb (data flow through system)",
+          "Service_Communication_Tests-{{YYYY-MM-DD-HHMMSS}}.ipynb (inter-service communication)",
+          "Performance_End_to_End_Tests-{{YYYY-MM-DD-HHMMSS}}.ipynb (E2E performance validation)",
+          "Error_Recovery_Integration_Tests-{{YYYY-MM-DD-HHMMSS}}.ipynb (error handling across services)",
+          "Security_End_to_End_Tests-{{YYYY-MM-DD-HHMMSS}}.ipynb (security validation throughout workflows)"
+        ],
+        "recommended_action": "consolidate/remove - exceeds limit"
+      },
+      {
+        "file": "test/test-protocol-execution-tracking-prompt.yaml",
+        "current_outputs": 8,
+        "output_list": [
+          "Test_Execution_Tracking_Overview-{{YYYY-MM-DD-HHMMSS}}.ipynb (master tracking system overview)",
+          "Real_Time_Monitoring_Dashboard-{{YYYY-MM-DD-HHMMSS}}.ipynb (live monitoring configuration)",
+          "Deviation_Detection_Analysis-{{YYYY-MM-DD-HHMMSS}}.ipynb (statistical deviation analysis)",
+          "Performance_Tracking_System-{{YYYY-MM-DD-HHMMSS}}.ipynb (performance monitoring implementation)",
+          "Alert_System_Configuration-{{YYYY-MM-DD-HHMMSS}}.ipynb (alerting and notification setup)",
+          "Test_Result_Aggregation-{{YYYY-MM-DD-HHMMSS}}.ipynb (result collection and analysis)",
+          "Trend_Analysis_System-{{YYYY-MM-DD-HHMMSS}}.ipynb (historical trend analysis)",
+          "Tracking_Implementation_Guide-{{YYYY-MM-DD-HHMMSS}}.ipynb (implementation documentation)"
+        ],
+        "recommended_action": "consolidate/remove - exceeds limit"
+      },
+      {
+        "file": "test/test-protocol-planning-framework-prompt.yaml",
+        "current_outputs": 8,
+        "output_list": [
+          "Test_Planning_Framework_Overview-{{YYYY-MM-DD-HHMMSS}}.ipynb (comprehensive framework overview)",
+          "Test_Strategy_Development_Framework-{{YYYY-MM-DD-HHMMSS}}.ipynb (strategy development methodology)",
+          "Feature_Analysis_Framework-{{YYYY-MM-DD-HHMMSS}}.ipynb (feature analysis templates and tools)",
+          "Coverage_Analysis_Framework-{{YYYY-MM-DD-HHMMSS}}.ipynb (coverage planning matrices and analysis)",
+          "Risk_Assessment_Framework-{{YYYY-MM-DD-HHMMSS}}.ipynb (risk analysis and priority planning)",
+          "Resource_Planning_Framework-{{YYYY-MM-DD-HHMMSS}}.ipynb (resource and timeline planning tools)",
+          "Quality_Framework_Development-{{YYYY-MM-DD-HHMMSS}}.ipynb (quality criteria and success frameworks)",
+          "Automation_Strategy_Framework-{{YYYY-MM-DD-HHMMSS}}.ipynb (test automation planning methodology)"
+        ],
+        "recommended_action": "consolidate/remove - exceeds limit"
+      },
+      {
+        "file": "test/test-protocol-prerequisites-prompt.yaml",
+        "current_outputs": 8,
+        "output_list": [
+          "Test_Prerequisites_Overview-{{YYYY-MM-DD-HHMMSS}}.ipynb (master prerequisite validation overview)",
+          "Service_Health_Validation-{{YYYY-MM-DD-HHMMSS}}.ipynb (service health check implementation)",
+          "Environment_Setup_Automation-{{YYYY-MM-DD-HHMMSS}}.ipynb (environment configuration automation)",
+          "Data_Preparation_Validation-{{YYYY-MM-DD-HHMMSS}}.ipynb (data setup and validation procedures)",
+          "Security_Validation_Framework-{{YYYY-MM-DD-HHMMSS}}.ipynb (security compliance checking)",
+          "Performance_Baseline_Setup-{{YYYY-MM-DD-HHMMSS}}.ipynb (performance baseline establishment)",
+          "Monitoring_Configuration-{{YYYY-MM-DD-HHMMSS}}.ipynb (monitoring setup validation)",
+          "Backup_Recovery_Procedures-{{YYYY-MM-DD-HHMMSS}}.ipynb (backup and recovery verification)"
+        ],
+        "recommended_action": "consolidate/remove - exceeds limit"
+      },
+      {
+        "file": "test/test-protocol-service-examples-prompt.yaml",
+        "current_outputs": 8,
+        "output_list": [
+          "Service_Testing_Examples_Overview-{{YYYY-MM-DD-HHMMSS}}.ipynb (comprehensive examples overview)",
+          "N8n_Service_Testing_Patterns-{{YYYY-MM-DD-HHMMSS}}.ipynb (n8n workflow testing examples)",
+          "Database_Service_Testing_Examples-{{YYYY-MM-DD-HHMMSS}}.ipynb (PostgreSQL, Neo4j, Qdrant testing)",
+          "AI_Service_Testing_Patterns-{{YYYY-MM-DD-HHMMSS}}.ipynb (LightRAG and AI service testing)",
+          "Infrastructure_Service_Testing-{{YYYY-MM-DD-HHMMSS}}.ipynb (Terraform, Ansible testing examples)",
+          "Monitoring_Service_Testing-{{YYYY-MM-DD-HHMMSS}}.ipynb (Prometheus, Grafana testing patterns)",
+          "Integration_Testing_Patterns-{{YYYY-MM-DD-HHMMSS}}.ipynb (inter-service testing examples)",
+          "Performance_Testing_Examples-{{YYYY-MM-DD-HHMMSS}}.ipynb (service performance testing patterns)"
+        ],
+        "recommended_action": "consolidate/remove - exceeds limit"
+      },
+      {
+        "file": "webui/python-code-framework-planning-prompt.yaml",
+        "current_outputs": 8,
+        "output_list": [
+          "Python_Planning_Complete-{{YYYY-MM-DD-HHMMSS}}.ipynb (master planning document)",
+          "Python_Requirements_Analysis-{{YYYY-MM-DD-HHMMSS}}.ipynb (project requirements breakdown)",
+          "Python_Task_Breakdown-{{YYYY-MM-DD-HHMMSS}}.ipynb (detailed task decomposition)",
+          "Resource_Timeline_Plan-{{YYYY-MM-DD-HHMMSS}}.ipynb (resource and timeline estimates)",
+          "Risk_Mitigation_Strategy-{{YYYY-MM-DD-HHMMSS}}.ipynb (risk analysis and mitigation)",
+          "Quality_Validation_Plan-{{YYYY-MM-DD-HHMMSS}}.ipynb (quality gates and validation)",
+          "Implementation_Roadmap-{{YYYY-MM-DD-HHMMSS}}.ipynb (implementation roadmap and milestones)",
+          "Code_Reuse_Analysis-{{YYYY-MM-DD-HHMMSS}}.ipynb (existing codebase integration analysis)"
+        ],
+        "recommended_action": "consolidate/remove - exceeds limit"
+      },
+      {
+        "file": "webui/python-code-gap-analysis-prompt.yaml",
+        "current_outputs": 8,
+        "output_list": [
+          "Python_Gap_Overview-{{YYYY-MM-DD-HHMMSS}}.ipynb (analysis methodology and scope)",
+          "Best_Practices_Gaps-{{YYYY-MM-DD-HHMMSS}}.ipynb (PEP compliance and idiom gaps)",
+          "Type_Safety_Gaps-{{YYYY-MM-DD-HHMMSS}}.ipynb (type annotation coverage issues)",
+          "Testing_Coverage_Gaps-{{YYYY-MM-DD-HHMMSS}}.ipynb (test strategy deficiencies)",
+          "Security_Analysis_Gaps-{{YYYY-MM-DD-HHMMSS}}.ipynb (security vulnerabilities)",
+          "Performance_Optimization_Gaps-{{YYYY-MM-DD-HHMMSS}}.ipynb (performance bottlenecks)",
+          "Modernization_Roadmap-{{YYYY-MM-DD-HHMMSS}}.ipynb (Python 3 migration plan)",
+          "Executive_Summary-{{YYYY-MM-DD-HHMMSS}}.ipynb (key findings and recommendations)"
+        ],
+        "recommended_action": "consolidate/remove - exceeds limit"
+      },
+      {
+        "file": "webui/python-code-lint-and-quality-check-prompt.yaml",
+        "current_outputs": 8,
+        "output_list": [
+          "Python_Quality_Report-{{YYYY-MM-DD-HHMMSS}}.ipynb (complete assessment)",
+          "Style_Compliance-{{YYYY-MM-DD-HHMMSS}}.ipynb (PEP 8 and formatting)",
+          "Type_Safety_Report-{{YYYY-MM-DD-HHMMSS}}.ipynb (type validation)",
+          "Security_Scan_Results-{{YYYY-MM-DD-HHMMSS}}.ipynb (vulnerability report)",
+          "Test_Coverage_Analysis-{{YYYY-MM-DD-HHMMSS}}.ipynb (test metrics)",
+          "Quality_Fixes_Applied-{{YYYY-MM-DD-HHMMSS}}.ipynb (safe fixes)",
+          "Complex_Issues_Flagged-{{YYYY-MM-DD-HHMMSS}}.ipynb (remediation needs)",
+          "Quality_Summary-{{YYYY-MM-DD-HHMMSS}}.ipynb (executive summary)"
+        ],
+        "recommended_action": "consolidate/remove - exceeds limit"
+      },
+      {
+        "file": "webui/python-code-refactor-prompt.yaml",
+        "current_outputs": 8,
+        "output_list": [
+          "Python_Refactoring_Plan-{{YYYY-MM-DD-HHMMSS}}.ipynb (refactoring strategy)",
+          "SOLID_Principles_Applied-{{YYYY-MM-DD-HHMMSS}}.ipynb (SOLID transformations)",
+          "Design_Patterns_Implemented-{{YYYY-MM-DD-HHMMSS}}.ipynb (pattern applications)",
+          "Code_Modernization-{{YYYY-MM-DD-HHMMSS}}.ipynb (Python 3.11+ updates)",
+          "Type_Annotations_Added-{{YYYY-MM-DD-HHMMSS}}.ipynb (type safety improvements)",
+          "Performance_Optimizations-{{YYYY-MM-DD-HHMMSS}}.ipynb (performance enhancements)",
+          "Quality_Validation-{{YYYY-MM-DD-HHMMSS}}.ipynb (quality verification)",
+          "Refactoring_Summary-{{YYYY-MM-DD-HHMMSS}}.ipynb (executive summary)"
+        ],
+        "recommended_action": "consolidate/remove - exceeds limit"
+      },
+      {
+        "file": "webui/python-code-review-prompt.yaml",
+        "current_outputs": 8,
+        "output_list": [
+          "Code_Review_Analysis-{{YYYY-MM-DD-HHMMSS}}.ipynb (comprehensive analysis with interactive elements)",
+          "Architecture_Diagrams-{{YYYY-MM-DD-HHMMSS}}.md (complete architectural visualization set)",
+          "Interface_Contracts-{{YYYY-MM-DD-HHMMSS}}.md (all significant interfaces documented)",
+          "Security_Assessment-{{YYYY-MM-DD-HHMMSS}}.md (vulnerability analysis and recommendations)",
+          "Performance_Report-{{YYYY-MM-DD-HHMMSS}}.md (bottleneck analysis and optimization guide)",
+          "Technical_Debt_Inventory-{{YYYY-MM-DD-HHMMSS}}.md (debt analysis and refactoring roadmap)",
+          "Best_Practices_Report-{{YYYY-MM-DD-HHMMSS}}.md (language-specific compliance analysis)",
+          "Executive_Summary-{{YYYY-MM-DD-HHMMSS}}.pdf (high-level findings for stakeholders)"
+        ],
+        "recommended_action": "consolidate/remove - exceeds limit"
+      },
+      {
+        "file": "code/code-implement-prompt.yaml",
+        "current_outputs": 7,
+        "output_list": [
+          "Implementation_Complete-{{YYYY-MM-DD-HHMMSS}}.ipynb (all code implemented)",
+          "Production_Code_Inventory-{{YYYY-MM-DD-HHMMSS}}.ipynb (all components)",
+          "Code_Quality_Report-{{YYYY-MM-DD-HHMMSS}}.ipynb (SOLID/DRY/KISS validation)",
+          "Security_Implementation-{{YYYY-MM-DD-HHMMSS}}.ipynb (security measures)",
+          "Performance_Validation-{{YYYY-MM-DD-HHMMSS}}.ipynb (optimization results)",
+          "API_Contracts_Met-{{YYYY-MM-DD-HHMMSS}}.ipynb (contract compliance)",
+          "Zero_Test_Code_Cert-{{YYYY-MM-DD-HHMMSS}}.ipynb (no tests created)"
+        ],
+        "recommended_action": "consolidate/remove - exceeds limit"
+      },
+      {
+        "file": "code/code-planning-prompt.yaml",
+        "current_outputs": 7,
+        "output_list": [
+          "Implementation_Blueprint-{{YYYY-MM-DD-HHMMSS}}.ipynb (complete plan)",
+          "Architecture_Design-{{YYYY-MM-DD-HHMMSS}}.ipynb (technical design)",
+          "Code_Reuse_Analysis-{{YYYY-MM-DD-HHMMSS}}.ipynb (existing code map)",
+          "Validation_Workflow-{{YYYY-MM-DD-HHMMSS}}.ipynb (quality gates)",
+          "Deployment_Plan-{{YYYY-MM-DD-HHMMSS}}.ipynb (build/deploy/monitor)",
+          "Debug_Logging_Strategy-{{YYYY-MM-DD-HHMMSS}}.ipynb (logging plan)",
+          "Success_Criteria-{{YYYY-MM-DD-HHMMSS}}.ipynb (acceptance criteria)"
+        ],
+        "recommended_action": "consolidate/remove - exceeds limit"
+      },
+      {
+        "file": "code/code-deploy-prompt.yaml",
+        "current_outputs": 6,
+        "output_list": [
+          "Deployment_Report-{{YYYY-MM-DD-HHMMSS}}.md (comprehensive deployment report)",
+          "Build_Artifacts_Log-{{YYYY-MM-DD-HHMMSS}}.txt (build process documentation)",
+          "Health_Check_Results-{{YYYY-MM-DD-HHMMSS}}.json (health validation results)",
+          "Deployment_Validation-{{YYYY-MM-DD-HHMMSS}}.md (validation and testing results)",
+          "Monitoring_Setup-{{YYYY-MM-DD-HHMMSS}}.md (monitoring configuration guide)",
+          "Rollback_Procedures-{{YYYY-MM-DD-HHMMSS}}.md (rollback instructions)"
+        ],
+        "recommended_action": "consolidate/remove - exceeds limit"
+      }
+    ]
+  },
+  "summary": {
+    "total_compliant": 3,
+    "total_review": 5,
+    "total_non_compliant": 92,
+    "priority_fixes": [
+      "code/code-deploy-prompt.yaml",
+      "code/code-deployment-planning-prompt.yaml",
+      "code/code-feature-design-prompt.yaml",
+      "code/code-feature-implement-prompt.yaml",
+      "code/code-feature-planning-prompt.yaml",
+      "code/code-gap-analysis-prompt.yaml",
+      "code/code-implement-prompt.yaml",
+      "code/code-planning-prompt.yaml",
+      "code/code-refactor-prompt.yaml",
+      "code/code-remediation-prompt.yaml",
+      "deployments/deployments-app-deploy-prompt.yaml",
+      "deployments/deployments-app-planning-prompt.yaml",
+      "deployments/deployments-content-review-prompt.yaml",
+      "deployments/deployments-implement-prompt.yaml",
+      "deployments/deployments-k8s-architecture-prompt.yaml",
+      "deployments/deployments-k8s-deploy-prompt.yaml",
+      "deployments/deployments-planning-prompt.yaml",
+      "docs/docs-code-documentation-prompt.yaml",
+      "docs/docs-diataxis-prompt.yaml",
+      "docs/docs-enterprise-architecture-prompt.yaml",
+      "fastapi/fastapi-api-endpoint-design-prompt.yaml",
+      "fastapi/fastapi-application-implement-prompt.yaml",
+      "fastapi/fastapi-architecture-design-prompt.yaml",
+      "fastapi/fastapi-code-quality-review-prompt.yaml",
+      "fastapi/fastapi-implementation-planning-prompt.yaml",
+      "fastapi/fastapi-service-dependency-patterns-prompt.yaml",
+      "fastapi/python-code-analysis-prompt.yaml",
+      "fastapi/python-code-design-prompt.yaml",
+      "fastapi/python-code-framework-implement-prompt.yaml",
+      "fastapi/python-code-framework-planning-prompt.yaml",
+      "fastapi/python-code-gap-analysis-prompt.yaml",
+      "fastapi/python-code-lint-and-quality-check-prompt.yaml",
+      "fastapi/python-code-quality-analysis-prompt.yaml",
+      "fastapi/python-code-refactor-prompt.yaml",
+      "fastapi/python-code-review-prompt.yaml",
+      "llm-mcp-prompts/llm-mcp-prompts-claude-code-review-prompt.yaml",
+      "llm-mcp-prompts/llm-mcp-prompts-claude-code-write-prompt.yaml",
+      "llm-mcp-prompts/llm-mcp-prompts-review-prompt.yaml",
+      "node/nodejs-lint-quality-check-prompt.yaml",
+      "node/nodejs-refactor-prompt.yaml",
+      "plugin/code-plugin-framework-design-prompt.yaml",
+      "plugin/code-plugin-framework-implement-prompt.yaml",
+      "plugin/code-plugin-framework-planning-prompt.yaml",
+      "plugin/code-plugin-gap-analysis-prompt.yaml",
+      "plugin/code-plugin-lint-and-quality-check-prompt.yaml",
+      "plugin/code-plugin-quality-analysis-prompt.yaml",
+      "plugin/code-plugin-refactor-prompt.yaml",
+      "python/python-code-analysis-prompt.yaml",
+      "python/python-code-design-prompt.yaml",
+      "python/python-code-framework-implement-prompt.yaml",
+      "python/python-code-framework-planning-prompt.yaml",
+      "python/python-code-gap-analysis-prompt.yaml",
+      "python/python-code-lint-and-quality-check-prompt.yaml",
+      "python/python-code-quality-analysis-prompt.yaml",
+      "python/python-code-refactor-prompt.yaml",
+      "python/python-code-review-prompt.yaml",
+      "quality/quality-analyze-results-prompt.yaml",
+      "quality/quality-code-analysis-prompt.yaml",
+      "quality/quality-code-ast-analysis-prompt.yaml",
+      "quality/quality-code-deduplication-analysis-prompt.yaml",
+      "quality/quality-code-lint-and-quality-check-prompt.v2.yaml",
+      "quality/quality-code-lint-and-quality-check-prompt.yaml",
+      "quality/quality-code-operational-analysis-prompt.yaml",
+      "quality/quality-code-performance-analysis-prompt.yaml",
+      "quality/quality-code-review-prompt.yaml",
+      "quality/quality-code-security-analysis-prompt.yaml",
+      "quality/quality-code-validation-prompt.yaml",
+      "quality/quality-fix-critical-prompt.yaml",
+      "quality/quality-fix-dependencies-prompt.yaml",
+      "quality/quality-fix-security-prompt.yaml",
+      "sub-agents/sub-agents-creation-prompt.yaml",
+      "sub-agents/sub-agents-management-prompt.yaml",
+      "sub-agents/sub-agents-review-prompt.yaml",
+      "test/test-end-to-end-prompt.yaml",
+      "test/test-execution-prompt.yaml",
+      "test/test-live-api-prompt.yaml",
+      "test/test-planning-prompt.yaml",
+      "test/test-prerequisites-prompt.yaml",
+      "test/test-protocol-end-to-end-prompt.yaml",
+      "test/test-protocol-execution-tracking-prompt.yaml",
+      "test/test-protocol-planning-framework-prompt.yaml",
+      "test/test-protocol-prerequisites-prompt.yaml",
+      "test/test-protocol-service-examples-prompt.yaml",
+      "webui/python-code-analysis-prompt.yaml",
+      "webui/python-code-design-prompt.yaml",
+      "webui/python-code-framework-implement-prompt.yaml",
+      "webui/python-code-framework-planning-prompt.yaml",
+      "webui/python-code-gap-analysis-prompt.yaml",
+      "webui/python-code-lint-and-quality-check-prompt.yaml",
+      "webui/python-code-quality-analysis-prompt.yaml",
+      "webui/python-code-refactor-prompt.yaml",
+      "webui/python-code-review-prompt.yaml"
+    ]
+  }
+}
