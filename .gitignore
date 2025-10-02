@@ -1,0 +1,367 @@
+# =============================================================================
+# Python
+# =============================================================================
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+test-results/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+docs/.build/
+
+# PyBuilder
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# pipenv
+Pipfile.lock
+
+# PEP 582
+__pypackages__/
+
+# Celery stuff
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
+.env
+.env.local
+.env.*.local
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# =============================================================================
+# IDEs and Editors
+# =============================================================================
+# VSCode
+.vscode/
+*.code-workspace
+.history/
+
+# PyCharm
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+.vim/
+
+# Emacs
+*~
+\#*\#
+.\#*
+
+# =============================================================================
+# Operating System
+# =============================================================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# Linux
+*~
+.directory
+.Trash-*
+
+# =============================================================================
+# Docker
+# =============================================================================
+docker-compose.override.yml
+.dockerignore
+*.tar
+*.tar.gz
+
+# =============================================================================
+# Logs and Databases
+# =============================================================================
+*.log
+*.sql
+*.sqlite
+*.sqlite3
+*.db
+
+# Application logs
+logs/
+*.log.*
+log/
+
+# =============================================================================
+# Terraform
+# =============================================================================
+# Terraform state files
+*.tfstate
+*.tfstate.*
+*.tfstate.backup
+*.tfstate.lock.info
+
+# Terraform plan files
+*.tfplan
+*.tfplan.*
+
+# Terraform module cache
+.terraform/
+.terraform.lock.hcl
+
+# Terraform override files
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Terraform variables (may contain sensitive data)
+*.auto.tfvars
+*.auto.tfvars.json
+terraform.tfvars
+terraform.tfvars.json
+
+# Crash log files
+crash.log
+crash.*.log
+
+# =============================================================================
+# Ansible
+# =============================================================================
+# Ansible retry files
+*.retry
+
+# Ansible vault files (encrypted)
+*vault*
+*secret*
+
+# Ansible inventory files (may contain sensitive data)
+inventory/production
+inventory/staging
+hosts.ini
+
+# Ansible collections cache
+collections/
+
+# =============================================================================
+# Workspace and Data Directories
+# =============================================================================
+# Application data directories
+/data/
+/workspace/
+/shared/
+/backups/
+/tmp/
+/temp/
+
+# Service-specific directories
+/terraform_workspace/
+/ansible_workspace/
+/iac_manager_data/
+/iac_manager_workspace/
+
+# =============================================================================
+# Secrets and Credentials
+# =============================================================================
+# Credential files
+*.pem
+*.key
+*.cert
+*.crt
+*.p12
+*.pfx
+credentials.json
+service-account*.json
+*-credentials.json
+
+# SSH keys
+id_rsa
+id_dsa
+id_ecdsa
+id_ed25519
+*.pub
+
+# AWS credentials
+.aws/credentials
+
+# Azure credentials
+.azure/
+
+# GCP credentials
+gcp-*.json
+*-gcp.json
+
+# Environment-specific secrets
+.env.production
+.env.staging
+.env.development
+secrets/
+.secrets/
+
+# API keys and tokens
+*.token
+*.apikey
+
+# =============================================================================
+# Build and Package Artifacts
+# =============================================================================
+# Compiled binaries
+*.exe
+*.dll
+*.dylib
+*.so.*
+
+# Package files
+*.zip
+*.tar.gz
+*.tgz
+*.rar
+
+# =============================================================================
+# Monitoring and Metrics
+# =============================================================================
+# Prometheus data
+prometheus/
+prometheus_data/
+
+# Grafana data
+grafana/
+grafana_data/
+
+# =============================================================================
+# Miscellaneous
+# =============================================================================
+# Backup files
+*.bak
+*.backup
+*.old
+*.orig
+
+# Temporary files
+*.tmp
+.temp/
+
+# Lock files
+*.lock
+package-lock.json
+yarn.lock
+poetry.lock
+
+# Cache directories
+.cache/
+*.cache/
+
+# Node modules (if any JS tooling is used)
+node_modules/

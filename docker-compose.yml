@@ -1,0 +1,264 @@
+version: '3.8'
+
+networks:
+  n8n_network:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.20.0.0/16
+
+volumes:
+  shared_data:
+    driver: local
+  redis_data:
+    driver: local
+  minio_data:
+    driver: local
+  terraform_workspace:
+    driver: local
+  ansible_workspace:
+    driver: local
+  iac_manager_data:
+    driver: local
+  iac_manager_workspace:
+    driver: local
+
+services:
+  # Redis - Shared cache and message broker
+  redis:
+    image: redis:7-alpine
+    container_name: iac-redis
+    restart: unless-stopped
+    command: redis-server --requirepass ${REDIS_PASSWORD}
+    ports:
+      - "${REDIS_PORT:-6379}:6379"
+    volumes:
+      - redis_data:/data
+    networks:
+      n8n_network:
+        ipv4_address: 172.20.0.10
+    healthcheck:
+      test: ["CMD", "redis-cli", "--raw", "incr", "ping"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+    environment:
+      - TZ=UTC
+
+  # MinIO - S3-compatible object storage for Terraform state
+  minio:
+    image: minio/minio:latest
+    container_name: iac-minio
+    restart: unless-stopped
+    command: server /data --console-address ":9001"
+    ports:
+      - "${MINIO_PORT:-9000}:9000"
+      - "${MINIO_CONSOLE_PORT:-9001}:9001"
+    volumes:
+      - minio_data:/data
+      - shared_data:/shared
+    networks:
+      n8n_network:
+        ipv4_address: 172.20.0.11
+    environment:
+      - MINIO_ROOT_USER=${MINIO_ACCESS_KEY}
+      - MINIO_ROOT_PASSWORD=${MINIO_SECRET_KEY}
+      - MINIO_REGION=${MINIO_REGION:-us-east-1}
+      - TZ=UTC
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:9000/minio/health/live"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+
+  # Terraform Agent - IaC execution service
+  terraform-agent:
+    image: n8n-terraform-agent:latest
+    container_name: iac-terraform-agent
+    restart: unless-stopped
+    ports:
+      - "${TERRAFORM_AGENT_PORT:-8080}:8080"
+    volumes:
+      - terraform_workspace:/workspace
+      - shared_data:/shared
+    networks:
+      n8n_network:
+        ipv4_address: 172.20.0.20
+    depends_on:
+      redis:
+        condition: service_healthy
+    environment:
+      # Service Configuration
+      - SERVICE_NAME=terraform-agent
+      - SERVICE_VERSION=1.0.0
+      - UVICORN_HOST=0.0.0.0
+      - UVICORN_PORT=8080
+      - LOG_LEVEL=${TERRAFORM_LOG_LEVEL:-info}
+      - DEBUG=${TERRAFORM_DEBUG:-false}
+
+      # Redis Configuration
+      - REDIS_HOST=redis
+      - REDIS_PORT=6379
+      - REDIS_DB=${TERRAFORM_REDIS_DB:-0}
+      - REDIS_PASSWORD=${REDIS_PASSWORD}
+
+      # Azure Credentials
+      - ARM_CLIENT_ID=${ARM_CLIENT_ID:-}
+      - ARM_CLIENT_SECRET=${ARM_CLIENT_SECRET:-}
+      - ARM_SUBSCRIPTION_ID=${ARM_SUBSCRIPTION_ID:-}
+      - ARM_TENANT_ID=${ARM_TENANT_ID:-}
+
+      # AWS Credentials
+      - AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID:-}
+      - AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY:-}
+      - AWS_REGION=${AWS_REGION:-}
+
+      # GCP Credentials
+      - GOOGLE_CREDENTIALS=${GOOGLE_CREDENTIALS:-}
+      - GCP_PROJECT_ID=${GCP_PROJECT_ID:-}
+
+      - TZ=UTC
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8080/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 30s
+
+  # Ansible Agent - Configuration management service
+  ansible-agent:
+    image: n8n-ansible-agent:v1.0.4
+    container_name: iac-ansible-agent
+    restart: unless-stopped
+    ports:
+      - "${ANSIBLE_AGENT_PORT:-8081}:8081"
+    volumes:
+      - ansible_workspace:/workspace
+      - shared_data:/shared
+    networks:
+      n8n_network:
+        ipv4_address: 172.20.0.21
+    environment:
+      # Service Configuration
+      - SERVICE_NAME=ansible-agent
+      - SERVICE_VERSION=1.0.0
+      - UVICORN_HOST=0.0.0.0
+      - UVICORN_PORT=8081
+      - LOG_LEVEL=${ANSIBLE_LOG_LEVEL:-INFO}
+      - DEBUG=${ANSIBLE_DEBUG:-false}
+
+      # Ansible Configuration
+      - MAX_CONCURRENT_PLAYBOOKS=${MAX_CONCURRENT_PLAYBOOKS:-10}
+      - PLAYBOOK_TIMEOUT=${PLAYBOOK_TIMEOUT:-3600}
+      - INVENTORY_CACHE_TTL=${INVENTORY_CACHE_TTL:-300}
+
+      # Azure Credentials
+      - AZURE_CLIENT_ID=${AZURE_CLIENT_ID:-}
+      - AZURE_SECRET=${AZURE_SECRET:-}
+      - AZURE_SUBSCRIPTION_ID=${AZURE_SUBSCRIPTION_ID:-}
+      - AZURE_TENANT=${AZURE_TENANT:-}
+
+      # AWS Credentials
+      - AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID:-}
+      - AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY:-}
+      - AWS_REGION=${AWS_REGION:-}
+
+      - TZ=UTC
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8081/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 30s
+
+  # IAC Agent Manager - Orchestration and state management
+  iac-agent-manager:
+    image: n8n-iac-agent-manager:latest
+    container_name: iac-agent-manager
+    restart: unless-stopped
+    ports:
+      - "${IAC_MANAGER_PORT:-8003}:8003"
+    volumes:
+      - iac_manager_data:/app/data
+      - iac_manager_workspace:/workspace
+      - shared_data:/shared
+    networks:
+      n8n_network:
+        ipv4_address: 172.20.0.30
+    depends_on:
+      redis:
+        condition: service_healthy
+      minio:
+        condition: service_healthy
+    environment:
+      # Service Configuration
+      - SERVICE_NAME=iac-agent-manager
+      - SERVICE_VERSION=1.0.0
+      - SERVICE_HOST=0.0.0.0
+      - SERVICE_PORT=8003
+      - LOG_LEVEL=${IAC_MANAGER_LOG_LEVEL:-INFO}
+      - DEBUG=${IAC_MANAGER_DEBUG:-false}
+
+      # Redis Configuration
+      - REDIS_HOST=redis
+      - REDIS_PORT=6379
+      - REDIS_DB=${IAC_MANAGER_REDIS_DB:-3}
+      - REDIS_PASSWORD=${REDIS_PASSWORD}
+      - REDIS_SSL=false
+
+      # MinIO Configuration
+      - MINIO_ENDPOINT=minio:9000
+      - MINIO_ACCESS_KEY=${MINIO_ACCESS_KEY}
+      - MINIO_SECRET_KEY=${MINIO_SECRET_KEY}
+      - MINIO_REGION=${MINIO_REGION:-us-east-1}
+      - MINIO_USE_TLS=false
+      - MINIO_BUCKET_PREFIX=${MINIO_BUCKET_PREFIX:-terraform-state}
+
+      # Vault Configuration (optional)
+      - VAULT_ADDR=${VAULT_ADDR:-http://vault:8200}
+      - VAULT_TOKEN=${VAULT_TOKEN:-}
+      - VAULT_ROLE_ID=${VAULT_ROLE_ID:-}
+      - VAULT_SECRET_ID=${VAULT_SECRET_ID:-}
+      - VAULT_TRANSIT_PATH=${VAULT_TRANSIT_PATH:-transit}
+      - VAULT_KEY_NAME=${VAULT_KEY_NAME:-terraform-state}
+      - VAULT_VERIFY_SSL=false
+
+      # Security Configuration
+      - REQUIRE_AUTH=${REQUIRE_AUTH:-true}
+      - API_KEY_HEADER=${API_KEY_HEADER:-X-API-Key}
+      - ALLOWED_ORIGINS=${ALLOWED_ORIGINS:-}
+
+      # Resource Limits
+      - MAX_REQUEST_SIZE=${MAX_REQUEST_SIZE:-104857600}
+      - RATE_LIMIT=${RATE_LIMIT:-1000}
+      - MAX_STATE_SIZE=${MAX_STATE_SIZE:-524288000}
+      - MAX_VERSIONS=${MAX_VERSIONS:-100}
+      - LOCK_TIMEOUT=${LOCK_TIMEOUT:-1800}
+
+      # State Management
+      - VERSION_CLEANUP=${VERSION_CLEANUP:-true}
+      - STATE_VALIDATION=${STATE_VALIDATION:-true}
+
+      # Backup Configuration
+      - BACKUP_RETENTION_DAYS=${BACKUP_RETENTION_DAYS:-30}
+      - MAX_BACKUPS=${MAX_BACKUPS:-100}
+      - VERIFY_BACKUPS=${VERIFY_BACKUPS:-true}
+      - BACKUP_COMPRESSION=${BACKUP_COMPRESSION:-true}
+      - SCHEDULED_BACKUP=${SCHEDULED_BACKUP:-true}
+
+      # Observability
+      - METRICS_ENABLED=${METRICS_ENABLED:-true}
+      - HEALTH_CHECK_ENABLED=${HEALTH_CHECK_ENABLED:-true}
+      - AUDIT_LOGGING=${AUDIT_LOGGING:-true}
+      - PERFORMANCE_TRACKING=${PERFORMANCE_TRACKING:-true}
+      - STRUCTURED_LOGGING=${STRUCTURED_LOGGING:-true}
+
+      - TZ=UTC
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8003/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 30s

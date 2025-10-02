@@ -1,0 +1,69 @@
+# State Management Service Dependencies
+# Production-ready requirements for centralized Terraform state management
+
+# FastAPI and ASGI server
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+
+# HTTP client and async support
+httpx==0.25.2
+aiofiles==23.2.1
+
+# Data validation and serialization
+pydantic==2.5.2
+pydantic-settings==2.1.0
+
+# Redis client for distributed locking
+redis[hiredis]==5.0.1
+
+# MinIO S3-compatible client
+minio==7.2.0
+
+# HashiCorp Vault client (optional - for encryption)
+hvac==2.1.0
+
+# JSON Web Tokens (for authentication)
+PyJWT==2.8.0
+cryptography>=42.0.0
+
+# Structured logging
+structlog==23.2.0
+colorlog==6.8.0
+
+# Monitoring and metrics
+prometheus-client==0.19.0
+
+# HTTP middleware and CORS
+python-multipart==0.0.6
+
+# Utility libraries
+python-dateutil==2.8.2
+pytz==2023.3
+
+# Development and testing dependencies (optional)
+pytest==7.4.3
+pytest-asyncio==0.21.1
+pytest-cov==4.1.0
+httpx==0.25.2  # For testing HTTP clients
+
+# Type checking
+mypy==1.7.1
+types-redis==4.6.0.11
+types-requests==2.31.0.10
+
+# Code formatting and linting
+black==23.11.0
+isort==5.12.0
+flake8==6.1.0
+bandit==1.7.5
+
+# Security scanning
+safety>=3.0.0
+
+# Code complexity analysis
+radon==6.0.1
+xenon==0.9.1
+
+# Additional utilities for production
+click==8.1.7  # For CLI utilities
+rich==13.7.0  # For rich console output
